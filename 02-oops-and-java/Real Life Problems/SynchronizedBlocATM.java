@@ -24,17 +24,14 @@ class bankaccount {
     }
 
     public void deposit(double depositAmount) {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'deposit'");
     }
 
     public void displayDetails() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'displayDetails'");
     }
 
     public double calculateInterest() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'calculateInterest'");
     }
 }

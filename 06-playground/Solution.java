@@ -548,9 +548,33 @@ import java.util.Map;
 
 // Reverse Linked List
 
-class Solution {
+// class empClass extends Thread {
+	// static int counter = 0;
 	
-	void main() {
-		
-	}
+	// int increment() {
+		// return counter++;
+	// }
+	
+	// @Override
+	// public void run() {
+		// IO.println("Thread is running .." + increment());
+	// }
+// }
+
+// interface II extends Runnable {
+	// publid r
+// }
+
+// class Solution {
+	
+	// void main() throws Exception{
+			
+		   // }
+	// }
+// }
+
+class Node {
+	public static void head;
+	
+	Node(int data,Node )
 }

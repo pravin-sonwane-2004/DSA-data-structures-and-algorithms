@@ -11,6 +11,15 @@ class MyLinkedList {
             this.next = null;
         }
     }
+	
+	void printTheLL() {
+		Node curr= head;
+		while(curr != null) {
+			IO.println(curr.data);
+			curr = curr.next;
+		}
+		
+	}
 
   void insertAtEnd(int data) {
     Node node = new Node(data);
@@ -69,21 +78,21 @@ class MyLinkedList {
 public class LinkedListPractice {
     public static void main(String[] args) {
         MyLinkedList first = new MyLinkedList();
-        MyLinkedList second = new MyLinkedList();
+        // MyLinkedList second = new MyLinkedList();
 
         first.insertAtEnd(10);
         first.insertAtEnd(20);
         first.insertAtEnd(30);
-        first.print();
+        first.printTheLL();
 
 
-        second.insertAtEnd(10);
-        second.insertAtEnd(20);
-        second.insertAtEnd(30);
-        second.print();
+        // second.insertAtEnd(10);
+        // second.insertAtEnd(20);
+        // second.insertAtEnd(30);
+        // second.print();
 
-        MyLinkedList merge =  MyLinkedList.mergeTwoLinkedList(first,second);
+        // MyLinkedList merge =  MyLinkedList.mergeTwoLinkedList(first,second);
 
-        merge.print();
+        // merge.print();
     }
 }
