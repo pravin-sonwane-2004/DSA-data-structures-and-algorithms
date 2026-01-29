@@ -1,8 +1,6 @@
 // arr = {1,2,3,4,5,6};
 // ans = {2,1,4,3,6,5};
 
-import java.util.ArrayList;
-
 public class SequanceEvenOdd {
     void main() {
         int arr []  = {1,2,3,4,5,6};

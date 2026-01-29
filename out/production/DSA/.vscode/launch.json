@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "SequanceEvenOddArraylist",
+            "request": "launch",
+            "mainClass": "SequanceEvenOddArraylist",
+            "projectName": "DSA_1a2f11f7"
+        },
+        {
+            "type": "java",
+            "name": "BinarySearch",
+            "request": "launch",
+            "mainClass": "BinarySearch",
+            "projectName": "DSA_1a2f11f7"
+        }
+    ]
+}
