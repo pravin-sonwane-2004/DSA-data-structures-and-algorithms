@@ -3,7 +3,7 @@
 
 import java.util.ArrayList;
 
-public class SequanceEvenOdd {
+public class SequanceEvenOddArraylist {
   public static void main(String[] args) {
     int arr[] = {1,2,3,4,5,6};
   ArrayList<Integer> even = new ArrayList<>();
