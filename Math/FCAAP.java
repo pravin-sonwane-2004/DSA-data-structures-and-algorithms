@@ -2,7 +2,7 @@ package Math;
 
 class FCAAP {
 	void main() {
-		int num = 11224456;
+		int num = 111224456;
 		int oregional = num;
 		int count = 0;
 		for(int i=1;i<=9;i++) {
@@ -23,6 +23,10 @@ class FCAAP {
 				}
 				num = num/10;                       // 1122445
 			}
+			if(count>0) {
+				System.out.println(i + " -> " + count);
+			}
 		}
+		
 	}
 }

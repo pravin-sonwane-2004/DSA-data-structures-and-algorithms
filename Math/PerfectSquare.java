@@ -1,3 +1,5 @@
+package Math;
+
 class PerfectSquare {
 	void main() {
 		PerfectSquare obj = new PerfectSquare();
