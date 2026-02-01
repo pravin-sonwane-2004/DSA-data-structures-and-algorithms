@@ -30,6 +30,5 @@ class Q8CountPrimeInArray {
 		   if(flag) count++;
 		}
 		System.out.println(count);
-		
 	 }
 }

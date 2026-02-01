@@ -1,7 +1,7 @@
-class practice  {
+class CountFreqA  {
 	void main() {
-		int [] arr = {1, 2, 2, 3, 3,3, 3, 4};
-					int count = 1;
+		int [] arr = {1, 2, 2, 3, 3,3, 3, 4,4,4,4,4};
+		int count = 1;
 		for(int i = 1;i<arr.length;i++) {
 			if(arr[i] == arr[i-1]) {
 				count++;
@@ -12,7 +12,7 @@ class practice  {
 			}
 
 		}
-									System.out.println(arr[ 1] + " -> " + count);
+			System.out.println(arr[ arr.length-1] + " -> " + count);
 
 	}
 }

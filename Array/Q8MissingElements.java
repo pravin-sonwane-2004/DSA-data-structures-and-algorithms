@@ -5,18 +5,18 @@
 // Check sequence numbers one by one. If a number from 1 to maximum (7) is not in the array, it is missing.
 
 class Q8MissingElements {
-	 void main() {
-		 int [] arr = {1, 2, 4, 5, 7};
+	void main() {
+		int[] arr = { 1, 2, 4, 5, 7 };
 		int count = 1;
-		// this is for only 1 missing number in array 
-		for(int i=0;i<arr.length;i++) {
+		// this is for only 1 missing number in array
+		for (int i = 1; i < arr.length; i++) {
 			++count;
-			if(arr[i]!=count){
+			if (arr[i] != count) {
 				System.out.println(count);
 				--count;
 			}
 			++count;
 		}
-				
-	 }
+
+	}
 }

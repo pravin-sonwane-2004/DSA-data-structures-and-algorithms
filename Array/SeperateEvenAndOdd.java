@@ -18,6 +18,7 @@ class SeperateEvenAndOdd {
 	void main() {
 		int [] arr= {2,4,6,7,3,9};
 		
+		
 		int start = 0;
 		int end = arr.length-1;
 		while (start<end && arr[start]%2==1) {

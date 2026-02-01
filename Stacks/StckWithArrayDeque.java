@@ -1,5 +1,3 @@
-package stacks;
-
 import java.util.ArrayDeque;
 
 class StckWithArrayDeque {

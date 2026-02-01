@@ -21,5 +21,6 @@ class SecLargestE {
 			  }
 		}
 			System.out.println(secMax);
-	}
+	} 
+	
 }

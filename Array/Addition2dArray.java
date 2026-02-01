@@ -53,11 +53,12 @@ class Addition2dArray {
             }
             System.out.println();
         }
-		
-		  // mul
-		  for (int i = 0; i < sizei; i++) {
+
+        for (int i = 0; i < sizei; i++) {
             for (int j = 0; j < sizej; j++) {
-                arr4[i][j] = arr[i][j] * arr2[i][j];
+                for(int k = 0 ;k<sizej;k++) {
+                    arr4[i][j]+=arr[i][k]*arr2[k][i];
+                }
             }
         }
 
@@ -68,5 +69,6 @@ class Addition2dArray {
             }
             System.out.println();
         }
+
     }
 }

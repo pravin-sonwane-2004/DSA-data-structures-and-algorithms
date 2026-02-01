@@ -9,7 +9,7 @@ public class SequanceEvenOdd {
 
         int even = 0;   // index where even should be
         int odd = 1;    // index where odd should be
-
+ 
         while(even < n && odd < n){
 
             // even index must contain ODD
