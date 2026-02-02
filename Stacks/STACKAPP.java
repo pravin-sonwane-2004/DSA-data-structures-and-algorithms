@@ -1,58 +1,53 @@
 import java.util.*;
 
 class STACKAPP {
-	void main() {
-
+	int stack [];
+	int top;
+	int capacity;
+	
 	Scanner sc = new Scanner(System.in);
-	IO.println("Enter The Size Of Array");
-	int size = sc.nextInt();
-	int stack [] = new int [size];
-	int top=-1;
-	int capacity = stack.length-1;
-	int choice = 0;
-
-	do {
+	
+	void initiate () {
 		
-	IO.println("1. push");
-	IO.println("2. pop");
-	IO.println("3. peek");
-	IO.println("4. display");
-	IO.println("5. Exit");
-	IO.println();
-	IO.println("Enter The Choice : ");
-	 choice = sc.nextInt();
-
-		switch (choice) {
-			case 1 : if(top == capacity) {
-				IO.println("Stack Overflow");
-				
-			}
-			IO.println("Enter The Element");
-			stack[++top] = sc.nextInt();
-			continue;
-
-			//pop4
-
-			case 2 : if(top ==-1) {
-					IO.println("Stack Underflow");
-			}
-			stack[--top] = sc.nextInt();
-
-			case 3 : if(top == -1) {
-					IO.println("Stack Underflow");
-					
-			}
-			IO.println("Element iss " + top);
-
-			case 4 : if(top != -1) {
-				for(int i=0;i<stack.length;i++) {
-					IO.println(stack[i]);
-				}
-			}
+	int sizeArr = sc.nextInt();
+		stack = new int[sizeArr];
+		top = -1;
+		capacity = stack.length-1;
+	}
+	void push() {
+		if(top == capacity) {
+			IO.println("Stack is Overflow");
+			return;
+		}
+		for(int i=0;i<capacity;i++) {
+		stack[++top] = sc.nextInt();
 		}
 	}
-	while(choice != 5);
+	int pop () {
+	   if(top==-1) {
+			IO.println("Stack Is UnderFlow");
+			return -1;
+	   }
+	   return stack[--top];
+	}
+	int peek () {
+		 if(top==-1) {
+			IO.println("Stack Is UnderFlow");
+			return -1;
+	   }
+	   return stack[top];
+	}
+	void display() {
+		if(top == -1) {
+			IO.println("stack is underflow");
+			return;
+		}
+		for(int i =top;i>0;i--) {
+			IO.println(stack[i]);
+		}
+	}
 
-
-}
+	void main() {
+		
+	}
 }
