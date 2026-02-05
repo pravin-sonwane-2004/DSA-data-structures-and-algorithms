@@ -1,5 +1,0 @@
-class MultiplicationArray  {
-	void main() {
-		
-	}
-}
