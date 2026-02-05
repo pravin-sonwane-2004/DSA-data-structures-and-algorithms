@@ -12,7 +12,7 @@ class Q7ReplaceFactorial {
 		int j = 0;
 		for(int i = 0;i<arr.length;i++) {
 			int rev = 1;
-			int temp = arr[i];
+		 	int temp = arr[i];
 			 while(temp > 0) {
 				 rev *= temp--;
 			 }
