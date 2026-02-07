@@ -8,7 +8,7 @@
 
 	class Q2MajorityElements {
 	void main() {
-	int [] arr = {4 , 8 , 4 , 6 , 7 , 4 , 4 , 8};
+	int [] arr = {4 , 8 , 4 , 6 , 7 , 8};
 	// int count =0;
 	int n = arr.length;
 	boolean found = false; 

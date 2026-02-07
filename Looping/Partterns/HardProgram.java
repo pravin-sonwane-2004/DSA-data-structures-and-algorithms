@@ -1,3 +1,5 @@
+package Looping.Partterns;
+
 class HardProgram {
 	void main() {
 		 int k = 0;

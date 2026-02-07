@@ -1,21 +1,23 @@
-
-
 public class MajorityElements {
     public static int majorityElement(int[] nums) {
-        int votes = 1;
-        int curr = nums[0];
-        for(int i =0;i<nums.length;i++) {
-            if (votes == 0) {
-                curr = nums[i];
-                votes = 1;
-            }else if(curr == nums[i]) {
-                votes++;
 
+        int candidate = 0;
+        int votes = 0;
+
+        for (int num : nums) {
+
+            if (votes == 0) {
+                candidate = num;
             }
-            else {
-                votes --;
-            }
+
+            votes += (num == candidate) ? 1 : -1;
         }
-        return curr;
+
+        return candidate;
+    }
+
+    void main() {
+        int arr[] = {1,2,3,3,4,5,7};
+        IO.println(majorityElement(arr));
     }
 }
