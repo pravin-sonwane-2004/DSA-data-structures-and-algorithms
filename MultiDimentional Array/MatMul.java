@@ -1,4 +1,5 @@
 public class MatMul {
+        void main() {
     int[][] firstMat = {
             { 1, 2, 3 },
             { 4, 5, 6 },
@@ -10,8 +11,21 @@ public class MatMul {
             { 7, 8, 9 }
     };
 
-    int [][] thirdMat = new int[firstMat.length] [firstMat.length];
+    int [][] thirdMat = new int[3][3];
 
-    for(int i=0;i<firstMat)
+    for(int i=0;i<firstMat.length;i++) {
+        for(int j=0;j<secMat[0].length;j++) {
+                for(int k=0;k< firstMat[0].length;k++) {
+                        thirdMat[i][j] += firstMat[i][k] * secMat[k][j];
+                }
+        }
+    }
 
+    for(int i=0;i<thirdMat.length;i++) {
+        for(int j=0;j< thirdMat[i].length;j++) {
+                IO.print(thirdMat[i][j] +" ");
+        }
+        IO.println();
+    }
+  }
 }
