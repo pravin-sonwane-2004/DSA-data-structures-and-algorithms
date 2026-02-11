@@ -37,6 +37,14 @@ public class Leetcode2942 {
         }
         return list;
     }
+    
+    public static List<Integer> findWordsContaining1(String[] words, char x) {
+        for(int i=0;i<words.length;i++) {
+            if(words[i]==x) {
+
+            }
+        }
+    }
 
     void main() {
         String [] words={"abc","bcd","aaaa","cbc"};
