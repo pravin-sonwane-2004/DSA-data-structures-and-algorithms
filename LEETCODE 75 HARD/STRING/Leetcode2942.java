@@ -1,6 +1,6 @@
 package STRING;
 
-import java.util.ArrayList;
+import java.util.*;
 import java.util.List;
 
 // 2942. Find Words Containing Character Easy Topics premium lock icon Companies
@@ -38,18 +38,18 @@ public class Leetcode2942 {
         return list;
     }
     
-    public static List<Integer> findWordsContaining1(String[] words, char x) {
-        for(int i=0;i<words.length;i++) {
-            if(words[i]==x) {
+    // public static List<Integer> findWordsContaining1(String[] words, char x) {
+        // for(int i=0;i<words.length;i++) {
+            // if(words[i]==x) {
 
-            }
-        }
-    }
+            // }
+        // }
+    // }
 
     void main() {
-        String [] words={"abc","bcd","aaaa","cbc"};
-        char x = 'a';
-        IO.println(findWordsContaining(words, x));
+			String [] words={"abc","bcd","a","cbc"};
+		IO.println(Arrays.asList(words).contains("a"));
+			// IO.println(words.contains("a"));
     }
 
     
