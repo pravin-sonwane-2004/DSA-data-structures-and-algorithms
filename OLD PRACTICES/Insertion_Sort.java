@@ -6,6 +6,7 @@ public class Insertion_Sort {
        for(int num:nums) {
             System.out.print(num+ " ");
         }
+        
         System.out.println();
         for (int i = 1;i<nums.length;i++) {         //1<5
             int key = nums[i];                   // key=8
@@ -13,11 +14,11 @@ public class Insertion_Sort {
             steps++;
             while(j>=0 && nums[j]>key) {           //  0>=0 && 7>8 
                 nums[j+1] = nums[j];              //
-                j--;                             //
+                j--;                             // c
             }
             nums[j + 1] = key;                  //    8
             System.out.println();
-            for(int num:nums) {
+            for(int num:nums) { 
                 System.out.print(num+ " ");
             }
         }

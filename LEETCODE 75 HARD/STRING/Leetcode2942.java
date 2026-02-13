@@ -1,7 +1,6 @@
 package STRING;
 
 import java.util.*;
-import java.util.List;
 
 // 2942. Find Words Containing Character Easy Topics premium lock icon Companies
 //  Hint You are given a 0-indexed array of strings words and a character x.
@@ -37,18 +36,12 @@ public class Leetcode2942 {
         }
         return list;
     }
-    
-    // public static List<Integer> findWordsContaining1(String[] words, char x) {
-        // for(int i=0;i<words.length;i++) {
-            // if(words[i]==x) {
-
-            // }
-        // }
-    // }
 
     void main() {
 			String [] words={"abc","bcd","a","cbc"};
-		IO.println(Arrays.asList(words).contains("a"));
+		// IO.println(Arrays.asList(words).contains("a"));
+        char c = 'a';
+        IO.println(findWordsContaining(words,c));
 			// IO.println(words.contains("a"));
     }
 
