@@ -12,28 +12,19 @@ class Practice {
 			return true;
 	  }
 	void main() throws Exception {
-		// int n = 16;
-		Practice obj = new Practice();
-		int n = 100;
-		for(int i =0;i<n;i++) {
-		if(isPrime(i)) {
-			IO.println(i);
-			
-		}
-		}
-		for(int i=2;i<=n;i++) {
-			boolean flag = true;
-			for(int j =2 ;j*j<=i;j++) {
-				if(i%j == 0) {
-					flag = false;
-					break;
+		int sum =0;
+		for(int i=2;i<100;i++) {
+			boolean	isPrime = true;
+			for(int j=2;j<i;j++) {
+				if(i % j*j == 0) {
+					isPrime = false;
+					  break;
 				}
-				else {
-					flag = true;
-				}
+				
 			}
-			if(flag) {
-				IO.println(i);
+			if(isPrime) {
+				sum+=i;
+				IO.println(i );
 			}
 		}
 	}
