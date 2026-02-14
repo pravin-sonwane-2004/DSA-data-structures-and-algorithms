@@ -8,13 +8,22 @@ class Solution {
 		 }
 		return d;
 	}
+	
+    public static int[][] transpose(int[][] matrix) {
+        int [][] arr = new int[3][3];
+        for(int i=0;i<matrix.length;i++) {
+            for(int j=0;j<matrix[i].length;j++) {
+                arr[i][j] = matrix[j][i];
+            }
+        }
+        return arr;
+}
 	void main() {
-		// IO.println(power(3,3));
-		int a  = 10;
-		int b = 5;
-		a = b+a; // 15
-		b = a-b;  // 10
-		a = a-b;
-		IO.println(b);
+		int arr [][] = {
+			{1,2,3},
+				{4,5,6},
+					{7,8,9}
+		}
+		IO.println(Arrays.toString(transpose(arr)));
 	}
 }

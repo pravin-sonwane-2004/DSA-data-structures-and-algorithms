@@ -1,12 +1,9 @@
 class PrintNumsFrom1ton {
-	static void print1(int n) {
-		 if(n==0) {
-			 return;
-		 }
-		print1(n-1);
-		System.out.println(n + " "); 
+	static int mystery(int n) {
+				   
 	}
-	void main() {
-		 print1(16);
+
+	void main() {          
+		 IO.println(mystery(10));
 	}
 }

@@ -6,15 +6,8 @@ public class Recursion {
         reverse(n);
     }
     public static void reverse (int n) {
-        if(n==1) {
-            System.out.println(n + " ");
-            return;
-        }
-
-
-        System.out.println(n);
+        if(n == 0) return;
+        IO.println(n);
         reverse(n-1);
-
-
     }
 }
