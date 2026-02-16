@@ -49,8 +49,7 @@ class FibbonacciSerise {
     if(n <= 0) return 1;
     return n+f(n-1);
 }
-
 		void main() {
-		IO.println(f(3));
+		IO.println(fib(4));
 	}
 }
