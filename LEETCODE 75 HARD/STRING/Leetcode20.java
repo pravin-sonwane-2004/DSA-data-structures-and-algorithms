@@ -46,23 +46,22 @@
  import java.util.*;
 class Leetcode20 {
 	 public boolean isValid(String str) {
-		Stack<Character> s = new Stack<>();
-		for(int i=0;i<str.length();i++) {
-			char ch = charAt(i);
-			
+		Stack<Character> stack = new Stack<>();
+		for(char ch : str.toCharArray()) {
 			if(ch=='(') {
-				s.push();
+				stack.push(ch);
 			}
 			else if(ch==')'){
-				s.pop();
+				stack.pop();
 			}
 		}
-		if(s.isEmpty()) {
+		if(stack.isEmpty()) {
 			return true;
 		}
+		return false;
 	}
 	void main() {
-		String s = "(())";
-		IO.println(isValid(s));
+		String str = "(())";
+		IO.println(isValid(str));
 	}
 }
