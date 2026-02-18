@@ -47,21 +47,25 @@
 class Leetcode20 {
 	 public boolean isValid(String str) {
 		Stack<Character> stack = new Stack<>();
-		for(char ch : str.toCharArray()) {
-			if(ch=='(') {
-				stack.push(ch);
+		for(char c : str.toCharArray()) {
+			if(c=='('|| c=='{' || c=='[') {
+				stack.push(c);
 			}
-			else if(ch==')'){
-				stack.pop();
-			}
+		else if(c==')'||c=='}'||c==']') {
+			 if(stack.isEmpty()) {
+				 return false;
+				}
+		char topChar = stack.pop();
+		        if ((c == ')' && topChar != '(') || (c == '}' && topChar != '{') || (c == ']' && topChar != '[')) {
+                    return false; // Mismatched brackets
+                }
 		}
-		if(stack.isEmpty()) {
-			return true;
-		}
-		return false;
-	}
-	void main() {
-		String str = "(())";
-		IO.println(isValid(str));
+	 }
+	 				return stack.isEmpty();
+
+	 }
+		void main() {
+			String str = "{}(([))]";
+			IO.println(isValid(str));
 	}
 }
