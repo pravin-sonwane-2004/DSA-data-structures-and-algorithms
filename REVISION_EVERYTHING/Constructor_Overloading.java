@@ -13,7 +13,8 @@ public class Constructor_Overloading {
             this.num = num;
             this.text = text;
         }
-        public static void main(String[] args) {
+
+    static void main(String[] args) {
             Constructor_Overloading obj1 = new Constructor_Overloading();              // Calls no-argument constructor
             Constructor_Overloading obj2 = new Constructor_Overloading ();  // Calls parameterized constructor
     

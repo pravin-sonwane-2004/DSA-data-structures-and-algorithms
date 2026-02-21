@@ -7,7 +7,7 @@ class LeetcodeSingleN{
 		return n;
 	}
 	void main() {
-		int arr [] = {4,1,2,1,2};
+        int[] arr = {4, 1, 2, 1, 2};
 		LeetcodeSingleN obj = new LeetcodeSingleN();
 		
 		IO.println(obj.retSingleApearElement(arr));

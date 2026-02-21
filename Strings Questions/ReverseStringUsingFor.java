@@ -1,6 +1,6 @@
 
 public class ReverseStringUsingFor {
-    public static void main(String [] args) {
+    static void main(String[] args) {
         String str = "Pravin";
         reverse(str);
         reverseWhile(str);

@@ -1,5 +1,5 @@
 public class MultipleCatchExample {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         try {
             int[] arr = {1, 2, 3};
             int result = arr[4]; // ArrayIndexOutOfBoundsException

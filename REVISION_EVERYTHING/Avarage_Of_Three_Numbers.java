@@ -1,5 +1,5 @@
 public class Avarage_Of_Three_Numbers {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int a =3;
         int b =6;
         int c =9;

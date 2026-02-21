@@ -1,5 +1,5 @@
 public class Logical_And_Relational {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int a = 3;
         int b = 4;
         int c = 5;

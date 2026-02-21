@@ -7,7 +7,7 @@
 		// #	11	#	12	#
 
 class Pattern44{
-	public static void main(String [] a) {
+    static void main(String[] a) {
 						int count =  1;
 			for(int i = 1;i<=5;i++) {
 				

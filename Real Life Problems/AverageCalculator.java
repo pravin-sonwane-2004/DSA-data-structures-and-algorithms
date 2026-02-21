@@ -1,7 +1,7 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class AverageCalculator {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Welcome To India's Got Latent Average Calculator ! ");

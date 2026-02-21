@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.ArrayList;
 public class practice {
     public static class Edge {
         int src;
@@ -9,7 +9,8 @@ public class practice {
             this.dest = d;
         }
     }
-    public static void makegraph(ArrayList <Edge> graph []) {
+
+    public static void makegraph(ArrayList<Edge>[] graph) {
         graph[0].add(new Edge(0, 1));
         graph[0].add(new Edge(0, 2));
 
@@ -34,14 +35,15 @@ public class practice {
         graph[6].add(new Edge(6, 5));
 
     }
-    public static void DFS (int curr,boolean vis [],ArrayList <Edge> graph []) {
+
+    public static void DFS(int curr, boolean[] vis, ArrayList<Edge>[] graph) {
         
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int v = 7;
-        ArrayList<Edge> graph [] = new ArrayList[v];
-        boolean vis[] = new boolean[v]; 
+        ArrayList<Edge>[] graph = new ArrayList[v];
+        boolean[] vis = new boolean[v];
         makegraph(graph);
     }
 }

@@ -8,7 +8,7 @@
 import java.util.Scanner;
 
 class ArrayQ10 {
-	 public static void main(String [] args) {
+    static void main(String[] args) {
 		 Scanner sc = new Scanner(System.in);
 		 System.out.println("Enter The Size");
 		 int size = sc.nextInt();
@@ -26,8 +26,8 @@ class ArrayQ10 {
 		 for(int i = index ; i<arr.length-1;i++) {
 				arr[i] = arr[i+1];
 			 }
-			 
-			int arr1 [] = {1,2,3,4,5,6,7};
+
+        int[] arr1 = {1, 2, 3, 4, 5, 6, 7};
 			int idx =2;
 		for(int i =idx;i<arr1.length-1;i++) {
 			   arr1[i] = arr1[i+1];

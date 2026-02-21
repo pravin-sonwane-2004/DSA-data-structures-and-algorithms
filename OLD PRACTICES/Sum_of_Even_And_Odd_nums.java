@@ -1,5 +1,5 @@
 public class Sum_of_Even_And_Odd_nums {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int n=20;
         int even=0;
         int odd=0;

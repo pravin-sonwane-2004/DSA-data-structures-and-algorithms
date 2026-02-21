@@ -1,5 +1,5 @@
 class SmallestSubArray {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int[] arr = {2,3,5,6,5,2,3,2,1};
         int target = 7;
 		

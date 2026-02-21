@@ -1,7 +1,7 @@
 
 class LengthOfLongestSubarray {
 	void main() {
-		int arr[] = {2, 1, 5, 1, 3, 2};
+        int[] arr = {2, 1, 5, 1, 3, 2};
 		 int start = 0;
 		 int end = arr.length;
 		 

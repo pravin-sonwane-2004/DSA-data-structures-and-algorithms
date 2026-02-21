@@ -14,9 +14,9 @@ public class BB {
                 }
             }
         }
-        
-        public static void main(String[] args) {
-            int arr [] = {5,8,7,9,6,4,3,2,1};
+
+    static void main(String[] args) {
+        int[] arr = {5, 8, 7, 9, 6, 4, 3, 2, 1};
             selectionSort(arr);
             System.out.println(Arrays.toString(arr));
     }

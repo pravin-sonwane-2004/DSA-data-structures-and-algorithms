@@ -11,7 +11,7 @@ class Counter {
 }
 
 public class SynchronizationExample {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Counter counter = new Counter();
 
         Thread t1 = new Thread(() -> {

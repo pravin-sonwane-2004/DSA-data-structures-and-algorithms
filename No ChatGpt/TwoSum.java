@@ -9,10 +9,10 @@
 // Example 3:
 // Input: nums = [3,3], target = 6
 // Output: [0,1]
- 
-import java.util.*;
+
+import java.util.Arrays;
 class TwoSum{
-	static int [] arr(int arr[],int target) {
+    static int[] arr(int[] arr, int target) {
 		for(int i=0;i<arr.length-1;i++){
 				if(arr[i]+arr[i+1]==target) {
 					return new int [] {i,i+1};

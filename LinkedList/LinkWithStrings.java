@@ -1,7 +1,9 @@
-import java.util.*;
+package LinkedList;
 
-public class Main {
-  public static void main(String[] args) {
+import java.util.LinkedList;
+
+public class LinkWithStrings {
+    static void main(String[] args) {
     LinkedList<String> list = new LinkedList<>();
     list.add("Java");
     list.add("Spring");

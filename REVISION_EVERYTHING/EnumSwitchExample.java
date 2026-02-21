@@ -2,7 +2,8 @@ public class EnumSwitchExample {
 enum TrafficLight {
     RED, YELLOW, GREEN
 }
-    public static void main(String[] args) {
+
+    static void main(String[] args) {
         TrafficLight light = TrafficLight.RED;
 
         switch (light) {

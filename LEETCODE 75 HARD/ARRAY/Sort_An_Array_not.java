@@ -16,10 +16,10 @@ public class Sort_An_Array_not {
         return nums;
     }
 
-    public static void main(String args[]) {;
+    static void main(String[] args) {
         int[] nums = {3, 4, 2, 5, 7, 6};
         Sort_An_Array_not s = new Sort_An_Array_not();
-        int Sorted [] = s.sortArray(nums);
+        int[] Sorted = s.sortArray(nums);
         System.out.println(Arrays.toString(Sorted));
     }
 }

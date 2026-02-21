@@ -4,7 +4,8 @@ public class Print_Table {
             System.out.println(t*i);
         }
     }
-    public static void main(String[] args) {
+
+    static void main(String[] args) {
         int t = 2;
         Printtable(t);
     }

@@ -1,8 +1,7 @@
 import java.util.ArrayList;
-import java.util.Vector;
 
 class STAAP {
-    public void main() throws InterruptedException {
+    void main() throws InterruptedException {
         ArrayList<Integer> list = new ArrayList<>();//\\
         // Vector <Integer> list = new Vector();
         Thread t1 = new Thread (() ->

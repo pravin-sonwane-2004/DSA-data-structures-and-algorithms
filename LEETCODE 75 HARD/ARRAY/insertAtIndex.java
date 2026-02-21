@@ -1,6 +1,6 @@
 public class insertAtIndex {
-    private static int [] arrayinsert(int arr [] , int value , int index) {
-        int newArr [] = new int[arr.length+1];
+    private static int[] arrayinsert(int[] arr, int value, int index) {
+        int[] newArr = new int[arr.length + 1];
         for(int i = 0;i<newArr.length;i++) {
             if(i<index) {
                 newArr[i] = arr[i];
@@ -14,8 +14,9 @@ public class insertAtIndex {
         }
         return newArr;
     }
-    public static void main(String[] args) {
-        int arr [] = {1,2,4,5,6};
+
+    static void main(String[] args) {
+        int[] arr = {1, 2, 4, 5, 6};
         int index = 2;
         int  value = 3;
         int [] newArr = arrayinsert(arr, value, index);

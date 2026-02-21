@@ -1,19 +1,19 @@
-final class Person {
+class Person {
     private final String name;
     private final int age;
 
     // Constructor to initialize fields
-    public Person(String name, int age) {
+    Person(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
     // Getter methods
-    public String getName() {
+    public String name() {
         return name;
     }
 
-    public int getAge() {
+    public int age() {
         return age;
     }
 
@@ -21,12 +21,12 @@ final class Person {
 }
 
 public class ImmutableExample {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Person person = new Person("Alice", 30);
         
         // person.setName("Bob"); // Error: setName method does not exist
-        
-        System.out.println(person.getName()); // Output: Alice
-        System.out.println(person.getAge());  // Output: 30
+
+        System.out.println(person.name()); // Output: Alice
+        System.out.println(person.age());  // Output: 30
     }
 }

@@ -2,7 +2,7 @@ import java.util.HashSet;
 class Leetcode219 {
 	
 	void main () {
-		int arr[] = {1,2,3,1,1,3,45,4};
+        int[] arr = {1, 2, 3, 1, 1, 3, 45, 4};
 		
 		HashSet<Integer> set = new HashSet<>();
 		

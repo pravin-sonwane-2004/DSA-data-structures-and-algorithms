@@ -1,8 +1,8 @@
 package TarnaryOperators;
 import java.util.Scanner;
 
-public class CabServiceChoice { 
-    public static void main(String[] args) {
+public class CabServiceChoice {
+    static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         int T = sc.nextInt(); // number of test cases

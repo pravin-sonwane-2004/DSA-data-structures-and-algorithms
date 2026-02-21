@@ -23,7 +23,7 @@ public class Revision_Till_Operators {
             return this.calculatearea() + other.calculatearea();
         }
 
-        public static void main(String[] args) {
+    static void main(String[] args) {
             //using default constructor
             Revision_Till_Operators react1 = new Revision_Till_Operators();
             System.out.println("Constructor : " + react1.calculatearea());

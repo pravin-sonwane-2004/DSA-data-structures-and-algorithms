@@ -22,7 +22,7 @@ public class MajorityElements {
     }
 
     void main() {
-        int arr[] = { 1,2,3,4,5,5,5,5 };
+        int[] arr = {1, 2, 3, 4, 5, 5, 5, 5};
         IO.println(majorityElement(arr));
     }
 }

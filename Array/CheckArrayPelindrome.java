@@ -11,14 +11,15 @@ Since both are the same, the array is a palindrome.
 
 class CheckArrayPelindrome{
 	void main() {
-		int arr [] = {1, 2, 3, 2, 1};
+        int[] arr = {1, 2, 3, 2, 1};
 		int first = 0;
 		int last = arr.length-1;
 		boolean b = false;
 		while(first<last) {
-			if(arr[first]==arr[last]) {
-				b = true;
-			}
+            if (arr[first] == arr[last]) {
+                b = true;
+                break;
+            }
 			first++;
 			last--;
 		}

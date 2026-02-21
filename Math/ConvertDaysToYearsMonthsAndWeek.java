@@ -3,7 +3,7 @@ package Math;
 Q18. Write a Java program to convert days to years, month and week.
  */
 public class ConvertDaysToYearsMonthsAndWeek {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int days = 366;
         int year = days/365;
         int remaining = year % 365;

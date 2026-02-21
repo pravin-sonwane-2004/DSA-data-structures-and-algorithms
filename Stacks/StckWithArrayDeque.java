@@ -1,7 +1,7 @@
 import java.util.ArrayDeque;
 
 class StckWithArrayDeque {
-  private ArrayDeque<Integer> list = new ArrayDeque<>();
+    private final ArrayDeque<Integer> list = new ArrayDeque<>();
 
   public void push(int val) {
     list.add(val);
@@ -21,7 +21,7 @@ class StckWithArrayDeque {
     return list.peek();
   }
 
-  public static void main(String[] args) {
+    static void main(String[] args) {
     ArrayDeque stack = new ArrayDeque<>();
     stack.push(10);
     stack.push(20);

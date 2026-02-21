@@ -40,7 +40,7 @@ class bankaccount {
 }
 
 public class SynchronizedBlocATM {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         // Shared bank account resource
         bankaccount account = new bankaccount(500);
 

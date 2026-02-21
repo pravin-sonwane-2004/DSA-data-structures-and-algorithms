@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Compare_List {
-  public static void main(String[] args) {
+    static void main(String[] args) {
     String[] arr = { "Aws", "Java", "React", "Js", "Next" };
 
     // ✅ Sort array by string length (ascending)

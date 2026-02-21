@@ -9,7 +9,7 @@ class Leetcode1822 {
         return neg % 2 == 0 ? 1 : -1; 
     }
 	void main() {
-		int arr [] = {2,4,-5, -3, -5, 4};
+        int[] arr = {2, 4, -5, -3, -5, 4};
 		IO.println(arraySign(arr));
 	}
 }

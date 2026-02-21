@@ -14,7 +14,7 @@
 // We print the values according to their index category.
 
 class EvenOddIndexes {
-	public static void main(String [] args) {
+    static void main(String[] args) {
 		int [] arr =   {5,10,15,20,25,30};
 		
 		System.out.println("Even Indexes Are :" );

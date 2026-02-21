@@ -41,6 +41,6 @@ public class Leetcode3379 {
         return result;
     }
     void main() {
-        int nums [] = {1,1,1,3};
+        int[] nums = {1, 1, 1, 3};
     }
 }

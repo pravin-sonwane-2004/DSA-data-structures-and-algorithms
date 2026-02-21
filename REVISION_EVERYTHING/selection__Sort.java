@@ -25,9 +25,9 @@ public class selection__Sort {
                 System.out.println(Arrays.toString(arr));
             }
         }
-        
-        public static void main(String[] args) {
-            int arr [] = {5,8,7,9,6,4,3,2,1};
+
+    static void main(String[] args) {
+        int[] arr = {5, 8, 7, 9, 6, 4, 3, 2, 1};
             selectionSort(arr);
             System.out.println();
             System.out.println("Final Array : "+Arrays.toString(arr));

@@ -4,7 +4,7 @@ package Math;
  */
 
 public class ConvertSecondsToHrs {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int sec = 7200;
 
         int hours = sec / 3600;

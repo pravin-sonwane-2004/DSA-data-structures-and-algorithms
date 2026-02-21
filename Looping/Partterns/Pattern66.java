@@ -8,7 +8,7 @@
 
 
 class Pattern66 {
-	public static void main(String [] a) {
+    static void main(String[] a) {
 		for(int i=1;i<=5;i++) {
 			boolean flag = true;
 			char ch='A';

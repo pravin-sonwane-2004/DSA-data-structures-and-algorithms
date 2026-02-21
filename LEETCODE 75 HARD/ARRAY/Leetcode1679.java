@@ -31,7 +31,7 @@ import java.util.Arrays;
 
 public class Leetcode1679 {
 
-    int retCount(int nums[],int k) {
+    int retCount(int[] nums, int k) {
         int start = 0;
         int end = nums.length-1;
         int count = 0;
@@ -70,7 +70,7 @@ public class Leetcode1679 {
         return count;
     }
     void main() {
-        int arr [] = { 1, 2, 3, 4};
+        int[] arr = {1, 2, 3, 4};
         int k = 5;
         IO.println(retCount(arr,k));
     }

@@ -1,7 +1,7 @@
 
 
 public class ReverseArray {
-    public static void reverse (int arr []) {
+    public static void reverse(int[] arr) {
         int start = 0;
         int end = arr.length-1;
         while(start<end){

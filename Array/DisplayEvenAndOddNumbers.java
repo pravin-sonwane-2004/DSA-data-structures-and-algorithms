@@ -8,7 +8,7 @@ import java.util.Scanner;
  // Odd Values = 11 33 55
 
 class DisplayEvenAndOddNumbers {
-	public static void main(String [] args) {
+    static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter The Size of Array");

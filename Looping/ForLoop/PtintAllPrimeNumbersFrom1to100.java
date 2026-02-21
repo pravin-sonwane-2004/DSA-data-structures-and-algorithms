@@ -1,6 +1,6 @@
 
 public class PtintAllPrimeNumbersFrom1to100 {
-    public static void main (String [] args) {
+    static void main(String[] args) {
         int n = 100;
         boolean isPrime = true;
         for(int num =2;num<n;num++) {

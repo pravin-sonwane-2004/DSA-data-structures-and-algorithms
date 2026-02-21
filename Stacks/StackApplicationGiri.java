@@ -1,9 +1,9 @@
-
-import java.util.*;
-public class StackApplicationGiri
-{ static int stack[]= new int[5];  //4
+import java.util.Scanner;
+public class StackApplicationGiri {
+    static int[] stack = new int[5];  //4
   static int top=-1;
-  public static void main(String x[])
+
+    static void main(String[] x)
    {    
       do{
 	     Scanner xyz  = new Scanner(System.in);

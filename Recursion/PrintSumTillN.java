@@ -1,6 +1,6 @@
 
 public class PrintSumTillN{
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int n = 4;
         System.out.println(returnSum(n));
     }

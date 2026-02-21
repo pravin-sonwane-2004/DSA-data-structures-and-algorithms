@@ -15,45 +15,7 @@ public class CircularQueue {
         front = 0;
         tail = -1;
     }
-    boolean isFull() {
-        if(size == capacity) {
-            return true;
-        }
-        return false;
-    }
-    boolean isEmpty() {
-        if(size == 0) {
-            return true;
-        }
-        return false;
-    }
-
-    void enQueue(int data) {
-        if(isFull()) {
-            throw new RuntimeException("Queue is Full");
-        }
-        tail = (tail +1 )%capacity;
-        cArray[tail] = data;
-        size++; 
-        
-    }
-    int deQueue() {
-        if(isEmpty()) {
-            throw new RuntimeException("Queue is empty");
-            // return -1;
-        }
-        int removed = cArray[front];
-        front = (front + 1) % capacity;
-        size--;
-        return removed;
-    }
-    
-    int peek() {
-        if (isEmpty())
-            return -1;
-        return cArray[front];
-    }
-   public static void main(String[] args) {
+    static void main(String[] args) {
     CircularQueue q = new CircularQueue();
     Scanner sc = new Scanner(System.in);
 
@@ -103,4 +65,38 @@ public class CircularQueue {
 
     sc.close();
 }
+
+    boolean isFull() {
+        return size == capacity;
+    }
+
+    void enQueue(int data) {
+        if(isFull()) {
+            throw new RuntimeException("Queue is Full");
+        }
+        tail = (tail +1 )%capacity;
+        cArray[tail] = data;
+        size++; 
+        
+    }
+    int deQueue() {
+        if(isEmpty()) {
+            throw new RuntimeException("Queue is empty");
+            // return -1;
+        }
+        int removed = cArray[front];
+        front = (front + 1) % capacity;
+        size--;
+        return removed;
+    }
+    
+    int peek() {
+        if (isEmpty())
+            return -1;
+        return cArray[front];
+    }
+
+    boolean isEmpty() {
+        return size == 0;
+    }
 }

@@ -1,5 +1,5 @@
 public class second_Highest {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int [] arr = {10,77,3,5,9,2};
         int max = Integer.MIN_VALUE;
         int SecMax = Integer.MIN_VALUE;

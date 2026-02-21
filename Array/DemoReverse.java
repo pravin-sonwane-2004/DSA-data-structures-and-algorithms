@@ -1,6 +1,6 @@
 class DemoReverse
 {
-    public static void reverse(int a[],int start,int end)
+    public static void reverse(int[] a, int start, int end)
 	{
 		 while(start<end)
 		 {
@@ -11,7 +11,8 @@ class DemoReverse
 		   end--;
 		 }
 	}
-   public static void main(String[] args)
+
+    static void main(String[] args)
    {
 	   int [] arr = {0,3,6,9,12,14,18,20,22,25,27};
 	   int k=4;

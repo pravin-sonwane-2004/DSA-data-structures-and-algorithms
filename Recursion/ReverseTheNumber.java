@@ -6,7 +6,7 @@ class ReverseTheNumber {
 		}
 		int lastD = num%10;
 		rever = rever*10+lastD;
-		return 10*rev(num%10) rev(num/10);
+        return 10 * rev(num % 10) + rev(num / 10);
 	}
 	void main() {
 		int num = 12345;

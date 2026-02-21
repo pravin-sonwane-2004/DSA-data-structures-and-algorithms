@@ -3,7 +3,7 @@
 
 public class DigitSumPractice {
 
-    public static void main (String [] args) {
+    static void main(String[] args) {
         int num = 12345;
         int last = 0;
         int sum =0;

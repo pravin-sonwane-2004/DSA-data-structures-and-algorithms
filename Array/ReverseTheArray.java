@@ -7,8 +7,8 @@
 
 
 class ReverseTheArray {
-	  public static void main(String [] args ) {
-		   int arr []  =  {1, 2, 3, 4, 5};
+    static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
 		   int si = 0;
 		   int ei = arr.length-1;
 		   

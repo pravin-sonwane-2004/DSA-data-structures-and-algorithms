@@ -1,5 +1,5 @@
 public class CheckTheNumberIsDuckOrNot{
-	 public static void main (String [] args) {
+    static void main(String[] args) {
 		String str = "1000";
 		char [] c = str.toCharArray();
 		boolean bl = false;

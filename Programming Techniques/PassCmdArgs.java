@@ -1,5 +1,5 @@
 public class PassCmdArgs {
-    public static void main(String[] args) {	
+    static void main(String[] args) {
 		int a = Integer.parseInt(args[0]);
 		int reverse = 0;
 		int lastdigit = 0;

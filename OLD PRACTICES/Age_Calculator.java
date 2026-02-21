@@ -1,6 +1,6 @@
-import java.util.*;
+import java.util.Scanner;
 public class Age_Calculator {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         System.out.println("enter your birt year : ");
         Scanner sc = new Scanner(System.in);
         int year=2024;

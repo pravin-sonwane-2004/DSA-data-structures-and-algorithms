@@ -9,7 +9,7 @@ taxRate = 12%
  */
 
 public class ClculateNetSalary {
-    public static void main (String [] args) {
+    static void main(String[] args) {
        int basicSalary = 35000;
         int taxRate = 12;
         int taxAmount =basicSalary*taxRate/100;

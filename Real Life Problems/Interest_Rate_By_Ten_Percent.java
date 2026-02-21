@@ -20,7 +20,7 @@ class bankAccount { // Renamed to follow PascalCase
 }
 
 public class Interest_Rate_By_Ten_Percent {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         bankAccount ac1 = new bankAccount(275000, "Pravin"); // Object creation
         ac1.display(); // Display account details
     }

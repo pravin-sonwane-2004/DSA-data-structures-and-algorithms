@@ -1,5 +1,5 @@
 public class exceptionHandler {
-public static void main(String[] args) {
+    static void main(String[] args) {
   try {
     int result = 10 / 0;
   } catch (ArithmeticException e) {

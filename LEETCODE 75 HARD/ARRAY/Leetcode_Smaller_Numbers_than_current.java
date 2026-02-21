@@ -35,10 +35,10 @@ public class Leetcode_Smaller_Numbers_than_current {
     }
 
     void main() {
-    int nums [] = {8,1,2,2,3};
+        int[] nums = {8, 1, 2, 2, 3};
     Leetcode_Smaller_Numbers_than_current obj = new Leetcode_Smaller_Numbers_than_current();
     IO.println("Incorrect Output -> "+Arrays.toString(obj.smallerNumbersThanCurrent(nums)));
-     int arr [] = {8,1,2,2,3};
+        int[] arr = {8, 1, 2, 2, 3};
     IO.println("corrected array is -> "+  Arrays.toString(obj.corrected(arr)));
     }
 }

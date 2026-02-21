@@ -11,7 +11,7 @@ public class NumberParser {
     }
   }
 
-  public static void main(String[] args) {
+    static void main(String[] args) {
     parseAndDivide("10");
     parseAndDivide("0");
     parseAndDivide("abc");

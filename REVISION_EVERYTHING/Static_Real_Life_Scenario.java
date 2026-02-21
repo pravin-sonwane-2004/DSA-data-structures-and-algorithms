@@ -17,7 +17,7 @@ public class Static_Real_Life_Scenario {
             + ", Interest Rate: " + interestRate + "%");
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Static_Real_Life_Scenario acc1 = new Static_Real_Life_Scenario("Alice", 1000);
         Static_Real_Life_Scenario acc2 = new Static_Real_Life_Scenario("Bob", 2000);
 

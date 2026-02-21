@@ -1,7 +1,7 @@
 package Math;
 
 class NumberIsSpy {
-	 public static void main(String [] args){
+    static void main(String[] args) {
 		int lastdigit=0;
 		int mult = 1;
 		int sum = 0;
@@ -13,7 +13,7 @@ class NumberIsSpy {
 			mult *= lastdigit;
 			num = num /10;
 		}
-		flag = mult == sum ? true : false;
+        flag = mult == sum;
 			 System.out.println(flag);
 		
 	 }

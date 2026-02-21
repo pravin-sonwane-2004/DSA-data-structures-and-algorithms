@@ -1,5 +1,5 @@
 public class CheckNumberIsPelindrome {
-	public static void main(String [] args) {
+    static void main(String[] args) {
 		
 		int reverse = 0;
 		int num = 121;
@@ -24,7 +24,7 @@ System.out.println(reverse);
 		reverse = reverse*10+lastDigit;
 		num = num/10;
 	}
-			boolean result = oregional == reverse ? true : false;
+        boolean result = oregional == reverse;
 				System.out.println(result);
 	}
 }

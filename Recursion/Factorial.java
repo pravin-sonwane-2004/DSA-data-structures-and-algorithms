@@ -1,10 +1,10 @@
-class Factorial {
-	static int factorial(int n) {
-		if(n<=1) return 1;
-		
-		return n*factorial(--n);
-	}
-	void main() {
-	IO.println(factorial(5));
-	}
-}
+//class Factorial {
+//	static int factorial(int n) {
+//		if(n<=1) return 1;
+//
+//		return n*factorial(--n);
+//	}
+//	void main() {
+//	IO.println(factorial(5));
+//	}
+//}

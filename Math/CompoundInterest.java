@@ -1,7 +1,7 @@
 package Math;
 
 public class CompoundInterest {
-	public static void main(String [] args) {
+    static void main(String[] args) {
 		double principle = 1000;
 		double rateI = 9;
 		double time = 2;

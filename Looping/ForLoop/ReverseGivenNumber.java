@@ -1,6 +1,6 @@
 
 public class ReverseGivenNumber {
-    public static void main (String [] args) {
+    static void main(String[] args) {
         int num = 12345;
         int rev = 0;
         int last = 0;

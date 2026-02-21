@@ -1,7 +1,7 @@
 
 
 public class LinearSearch {
-    public static void main (String [] args) {
+    static void main(String[] args) {
         int [] arr = {2,5,6,4,8,9,70};
         System.out.println(returnElementsPosition(arr,8));
     }

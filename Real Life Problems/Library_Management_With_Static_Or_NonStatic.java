@@ -19,7 +19,8 @@ public class Library_Management_With_Static_Or_NonStatic {
 
         System.out.println("total books in library "+totalBooks);
     }
-    public static void main(String[] args) {
+
+    static void main(String[] args) {
         Library_Management_With_Static_Or_NonStatic member1 = new Library_Management_With_Static_Or_NonStatic("pravin", 3);
         Library_Management_With_Static_Or_NonStatic member2 = new Library_Management_With_Static_Or_NonStatic("saurabh", 5);
         member1.diaplayMemberDetails();

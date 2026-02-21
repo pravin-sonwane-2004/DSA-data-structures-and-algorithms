@@ -10,7 +10,7 @@ Q29. Write a java program to input electricity unit charges & calculate total el
  */
 
 public class ElectricityBillCalculation {
-    public static void main (String [] args) {
+    static void main(String[] args) {
 
     }
 }

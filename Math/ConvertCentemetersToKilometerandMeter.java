@@ -6,7 +6,7 @@
     import java.util.Scanner;
 
     public class ConvertCentemetersToKilometerandMeter {
-        public static void main(String [] args) {
+        static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             System.out.println("enter value");
                 double cm = sc.nextDouble();

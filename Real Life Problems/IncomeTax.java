@@ -36,7 +36,7 @@ public class IncomeTax {
         }
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         IncomeTax obj = new IncomeTax();
 
         // Test cases for different income levels

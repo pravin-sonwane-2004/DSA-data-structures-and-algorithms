@@ -10,7 +10,7 @@ public class Gst_By_Eighteen_Percent {
         return actualAmount * (GST_RATE / 100); // Return only the GST value
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Gst_By_Eighteen_Percent obj = new Gst_By_Eighteen_Percent();
         double gst = obj.Gstcalculator(1000); // Calculate GST for ₹1,000
         System.out.println("Actual Amount: ₹" + obj.actualAmount);

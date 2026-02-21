@@ -7,7 +7,7 @@
 	// 11	K	12	L	13
 
 class Pattern70 {
-	 public static void main(String [] a) {
+    static void main(String[] a) {
 		for(int i=1;i<=5;i++) {
 			char ch = 'A';
 			int count = 1;

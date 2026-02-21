@@ -27,7 +27,7 @@ class Leetcode58 {
         return count;
     }
     void main() {
-    String s = "Pravin Is Good Gujjy";
+        String s = "Pravin Is Good Gujjy   ";
         IO.println(lengthOfLastWord(s));
 
     }

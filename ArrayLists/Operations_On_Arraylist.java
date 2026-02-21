@@ -34,8 +34,8 @@ public class Operations_On_Arraylist {
     }
     return revList;
   }
-    
-  public static void main(String[] args) {
+
+    static void main(String[] args) {
 
     // List<String> g = Check_If_Element_Exist.element();
     // String input = Check_If_Element_Exist.returnElement(g, "Java");

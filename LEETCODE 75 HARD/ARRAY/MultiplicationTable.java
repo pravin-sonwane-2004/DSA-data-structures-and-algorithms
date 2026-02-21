@@ -1,5 +1,5 @@
 public class MultiplicationTable {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int size = 10; // Table size
 
         // Print the header row

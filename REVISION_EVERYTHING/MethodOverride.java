@@ -1,3 +1,5 @@
+package REVISION_EVERYTHING;
+
 class Parent {
     public void greet() {
         System.out.println("Hello from Parent");
@@ -13,7 +15,7 @@ class Child extends Parent {
 }
 
 public class MethodOverride {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Child child = new Child();
         child.greet(); // Output: Hello from Child
     }

@@ -1,5 +1,5 @@
 public class ExceptionExample {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         try {
             int a = 10, b = 0;
             int result = a / b; // This line throws ArithmeticException

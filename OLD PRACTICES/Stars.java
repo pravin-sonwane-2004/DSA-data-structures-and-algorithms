@@ -1,5 +1,5 @@
 public class Stars {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int a = 5;
         
         // Upper part

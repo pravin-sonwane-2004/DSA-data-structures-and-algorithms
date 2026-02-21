@@ -17,7 +17,7 @@
 
 
 class CountEvenOdd {
-    public static void main(String[] args) {
+    static void main(String[] args) {
 
         int[] arr = {12, 17, 24, 39, 40, 55, 70};
 

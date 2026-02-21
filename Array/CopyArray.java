@@ -5,7 +5,7 @@
 // Copy each element of Array1 into Array2 using index-by-index assignment.
 
 public class CopyArray {
-	public static void main(String [] args) {
+    static void main(String[] args) {
 		 int [] Array1 = {5, 10, 15, 20};
 		 int [] newArray = new int[Array1.length];
 		 int j = 0;

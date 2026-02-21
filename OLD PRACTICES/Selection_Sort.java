@@ -1,6 +1,6 @@
 public class Selection_Sort {
-public static void main(String[] args) {
-    int nums [] = {7,8,3,1,2}; 
+    static void main(String[] args) {
+        int[] nums = {7, 8, 3, 1, 2};
     int minindex = 0;
     int temp=0;
     int steps=0;

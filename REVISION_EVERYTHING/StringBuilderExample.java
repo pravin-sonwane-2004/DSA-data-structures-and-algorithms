@@ -1,12 +1,11 @@
 public class StringBuilderExample {
-    public static void main(String[] args) {
-        StringBuilder sb = new StringBuilder();
+    static void main(String[] args) {
 
         // Dynamically building a sentence
-        sb.append("The quick ");
-        sb.append("brown fox ");
-        sb.append("jumps over ");
-        sb.append("the lazy dog.");
+        String sb = "The quick " +
+                "brown fox " +
+                "jumps over " +
+                "the lazy dog.";
 
         System.out.println("Final String: " + sb);
     }

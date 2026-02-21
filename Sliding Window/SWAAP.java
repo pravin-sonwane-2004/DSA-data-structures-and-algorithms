@@ -11,7 +11,7 @@ public class SWAAP {
     void main() {
         int k = 2;
         int sum =0;
-        int arr [] = {3, 6, 2, 4, 7};
+        int[] arr = {3, 6, 2, 4, 7};
         int count = 0;
 
         if (sum % 3 == 0)

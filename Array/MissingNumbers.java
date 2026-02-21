@@ -7,7 +7,6 @@
 // ////////////////////////////////////
 //i need to debug it and dry run it 
 ///////////////////////////////////////
-import java.util.Arrays;
 
 public class MissingNumbers {
 
@@ -46,7 +45,7 @@ public class MissingNumbers {
 		System.out.println();
 	}
 
-	public static void main(String[] args) {
+    static void main(String[] args) {
 		int[] arr1 = { 9, 6, 4, 5, 7, 10, 1 }; // Missing: 2, 3, 8
 		findAllMissing(arr1);
 

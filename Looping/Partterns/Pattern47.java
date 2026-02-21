@@ -14,7 +14,7 @@
 
 
 class Pattern47 {
-		  public static void main(String [] a) {
+    static void main(String[] a) {
 			   for(int i=1;i<=9;i++) {
 				   int count = 1;
 				   boolean flag = true;

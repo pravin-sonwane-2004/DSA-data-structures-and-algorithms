@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 
 class SearchEnteredElement {
-	public static void main(String [] args) {
+    static void main(String[] args) {
 		 int [] arr = {10, 20, 30, 40, 50};
 		 Scanner sc = new Scanner (System.in);
 		 System.out.println("Element Enter ");

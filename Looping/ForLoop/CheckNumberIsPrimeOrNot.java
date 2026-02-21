@@ -1,7 +1,7 @@
 
 
 public class CheckNumberIsPrimeOrNot {
-    public static void main (String [] args) {
+    static void main(String[] args) {
         int n = 17;
 
 //        boolean isPrime = true;

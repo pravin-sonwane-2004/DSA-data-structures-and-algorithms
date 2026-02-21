@@ -8,7 +8,7 @@
 
 
 class Pattern36 {
-	public static void main (String args [] ) {
+    static void main(String[] args) {
 		   for(int i = 1;i<=5;i++) {
 		   boolean b = true;
 		   int count = 1;

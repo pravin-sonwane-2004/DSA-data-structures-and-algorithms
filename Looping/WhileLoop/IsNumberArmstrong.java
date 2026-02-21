@@ -1,7 +1,7 @@
 package WhileLoop;
 
 public class IsNumberArmstrong {
-    public static void main (String [] args) {
+    static void main(String[] args) {
         int num = 153;
 
         int res = 0;

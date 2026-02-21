@@ -1,7 +1,7 @@
-import java.util.*;
+import java.util.Scanner;
 class JaggedArray {
 	void main() {
-		int  arr1 [][] = new int[3][];
+        int[][] arr1 = new int[3][];
 		
 		arr1[0]= new int[3];	
 		arr1[1]= new int[1];

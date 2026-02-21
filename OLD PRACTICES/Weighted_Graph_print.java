@@ -24,7 +24,7 @@ public class Weighted_Graph_print {
         graph[1].add(new Edge(1, 6, 4));
     }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         int v = 4; // number of vertices
         ArrayList<Edge>[] graph = new ArrayList[v];
         printg(graph);

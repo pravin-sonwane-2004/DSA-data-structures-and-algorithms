@@ -1,5 +1,5 @@
 class DuckNumberChecker {
-	 public static void main (String [] args) {
+    static void main(String[] args) {
 		
 		String str = "5522";
 		char [] c = str.toCharArray();
@@ -11,9 +11,10 @@ class DuckNumberChecker {
 		else {
 			
 			for(int i = 1; i<c.length;i++) {
-				if(c[i] == '0' ) {
-					b = true;
-				}
+                if (c[i] == '0') {
+                    b = true;
+                    break;
+                }
 			}
 		}
 		System.out.println(b);

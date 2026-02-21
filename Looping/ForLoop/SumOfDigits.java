@@ -1,7 +1,7 @@
 
 
 public class SumOfDigits {
-    public static void main (String [] args) {
+    static void main(String[] args) {
         int num =12345;
         int res =0;
         int addition = 0;

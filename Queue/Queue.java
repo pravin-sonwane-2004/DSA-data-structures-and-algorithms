@@ -1,5 +1,6 @@
 package Queue;
-import java.util.*;
+
+import java.util.Scanner;
 public class Queue {
     int [] queue;
     int front;
@@ -14,16 +15,11 @@ public class Queue {
         rear = -1;  
     }
     boolean isEmpty () {
-        if(size == 0) {
-            return true;
-        }
-        return false;
+        return size == 0;
     }
-    boolean isFull () { 
-        if(capacity == size) {
-            return true;
-        }
-        return false;
+
+    boolean isFull() {
+        return capacity == size;
     }
 
     void enQueue(int data) {

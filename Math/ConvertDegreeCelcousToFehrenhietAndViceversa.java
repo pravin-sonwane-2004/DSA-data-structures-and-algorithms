@@ -1,7 +1,7 @@
 package Math;
 
 public class ConvertDegreeCelcousToFehrenhietAndViceversa {
-    public static void main(String [] args) {
+    static void main(String[] args) {
         float cel = 0;
         float fah = 0;
 

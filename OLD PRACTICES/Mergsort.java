@@ -1,7 +1,7 @@
 public class Mergsort {
 
     public static void conquer(int[] arr, int si, int mid, int ei) {
-        int merged [] = new int[ei-si+1];
+        int[] merged = new int[ei - si + 1];
         int index1=si;
         int index2 = mid+1;
         int x=0;
@@ -26,7 +26,7 @@ public class Mergsort {
 
     }
 
-    public static void devid(int arr [] , int si,int ei) {
+    public static void devid(int[] arr, int si, int ei) {
         if(si>=ei) {
             return;
         }
@@ -34,10 +34,10 @@ public class Mergsort {
         devid(arr, si, mid);
         devid(arr, mid+1, ei);
         conquer(arr,si,mid,ei);
-    } 
+    }
 
-    public static void main(String[] args) {
-        int arr [] = {9,8,7,6,5,4,3,2};
+    static void main(String[] args) {
+        int[] arr = {9, 8, 7, 6, 5, 4, 3, 2};
         int n=arr.length;
         devid(arr, 0, n-1);
         for(int i=0;i<n;i++) {

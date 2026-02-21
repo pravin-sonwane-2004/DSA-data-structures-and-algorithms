@@ -7,12 +7,7 @@ class P {
 		 int first = 0;
 		 boolean b = false;
 		while(first < last) {
-		if(c[first] == c[last])  {
-			b = true;
-		}
-		else {
-			b = false;
-		}
+            b = c[first] == c[last];
 		first++;
 		last--;
 		}
