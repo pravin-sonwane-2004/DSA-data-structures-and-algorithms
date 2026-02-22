@@ -57,7 +57,7 @@ class Addition2dArray {
         for (int i = 0; i < sizei; i++) {
             for (int j = 0; j < sizej; j++) {
                 for(int k = 0 ;k<sizej;k++) {
-                    arr4[i][j]+=arr[i][k]*arr2[k][i];
+                    arr4[i][j]+=arr[i][k]*arr2[k][j];
                 }
             }
         }

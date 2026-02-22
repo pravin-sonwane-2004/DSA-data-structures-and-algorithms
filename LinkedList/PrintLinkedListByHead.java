@@ -135,8 +135,6 @@ class PrintLinkedListByHead {
         }
         return slow.data;
     }
-
-//
 //9️⃣ Reverse a Linked List (Iterative)
 //    Classic.
 //    Concept Tested:
@@ -153,9 +151,14 @@ class PrintLinkedListByHead {
             prev = curr;            // move prev
             curr = next;            // move curr
         }
-
         head = prev;  // update head
     }
+	
+	// 1️⃣1️⃣ Detect Cycle
+	// Return true if cycle exists.
+	// Hint Concept:
+	// Floyd’s Cycle Detection Algorithm
+
 
 
     static void main(String[] a) {

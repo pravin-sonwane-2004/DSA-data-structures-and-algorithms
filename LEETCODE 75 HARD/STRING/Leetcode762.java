@@ -27,9 +27,49 @@
 // 14 -> 1110 (3 set bits, 3 is prime)
 // 15 -> 1111 (4 set bits, 4 is not prime)
 // 5 numbers have a prime number of set bits.
- 
+
 class Leetcode762 {
-	  void main() {
-		  
-	  }
+	// to solve this question we need to add a function called isPrime and if it is
+	// so we need to add count that from 6 to 10 these much primes we got
+	static boolean isPrime(int n) {
+		if (n <= 1)
+			return false;
+		if (n == 2)
+			return true;
+		if (n % 2 == 0)
+			return false;
+
+		for (int i = 3; i * i <= n; i++) {
+			if (n % i == 0) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	// so this upper side code took a while to work
+	// i need to work on it a lot
+	public int countPrimeSetBits(int left, int right) {
+		int outerCount = 0;
+		for(int i=left;i<=right;i++) {
+			int count = 0;
+			String binary = Integer.toBinaryString(i);
+			for(char c : binary.toCharArray()) {
+				if(c =='1') {
+					++count;
+				}
+			}
+			if(isPrime(count)) {
+				++outerCount;
+			}
+		}
+		return outerCount;
+	}
+
+	void main() {
+		int left = 6;
+		int right = 10;
+		Leetcode762 l = new Leetcode762();
+		IO.println(l.countPrimeSetBits(left,right));
+	}
 }
