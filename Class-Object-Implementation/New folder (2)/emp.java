@@ -1,0 +1,5 @@
+class emp {    
+	void main ()  {
+		
+	}
+}

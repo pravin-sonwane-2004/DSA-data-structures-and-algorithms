@@ -27,3 +27,31 @@
 //		IO.println(Arrays.toString(transpose(arr)));
 //	}
 //}
+class Solution {
+    public String reverseWords(String s) {
+       String [] str = s.trim().split("\\s+");
+    StringBuilder sb = new StringBuilder();
+       for(int i = str.length-1;i>=0;i--) {
+         sb.append(str[i]);
+		 sb.append(" ");
+       }
+           return sb.toString();
+    }
+	void main() {
+		  String s = "the sky is blue";
+		  IO.println(reverseWords(s)) ;
+	}
+}
+// lass Solution {
+    // public int binaryGap(int n) {
+        // String s = Integer.toBinaryString(n);
+
+       // for(int i =0;i<s.length();i++) {
+        
+       // }
+    // }
+	// void main () {
+		// int n = 22;
+		// IO.println(binaryGap(n));
+	// }
+// }

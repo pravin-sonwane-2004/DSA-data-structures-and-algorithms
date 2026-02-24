@@ -1,0 +1,5 @@
+class pojo {
+	void main() {
+		
+	}
+}
