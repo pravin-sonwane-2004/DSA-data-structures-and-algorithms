@@ -46,6 +46,7 @@ class NewCar {
 		mileage = distanceTravelled / fuelConsumed;
 		return mileage;
 	}
+	
 }
 class QNo3 {
 	  void main() {    
@@ -57,14 +58,35 @@ class QNo3 {
 			 IO.println("Enter Car Id : ");
 			 cars[i].setCarId(sc.nextInt());
 			 			 sc.nextLine();
-
 			 IO.println("Enter Car Model : ");
 			 cars[i].setModel(sc.nextLine());
 			 IO.println("Enter Fuel Consumed : ");
 			 cars[i].setFuelConsumed(sc.nextInt());
 			 IO.println("Enter Distance Travelled : ");
 			 cars[i].setDistanceTravelled(sc.nextInt());
+			 IO.println("_____________________________");
 		 }
-		  nc.setCar(cars);
+		 nc.setCar(cars);
+		 int average = 0;
+		 int sum = 0;
+		 for(int i=0;i<cars.length;i++) {
+			 IO.println("Milage   " + nc.calcMilage(cars[i].getDistanceTravelled(),cars[i].getFuelConsumed()));
+			 sum += nc.calcMilage(cars[i].getDistanceTravelled(),cars[i].getFuelConsumed());
+	
+		 }
+		 average = sum/5;
+		 IO.println("Average  " + average);
+		 int count = 0;
+		 for(int i=0;i<cars.length;i++) {
+			 if(average <  nc.calcMilage(cars[i].getDistanceTravelled(),cars[i].getFuelConsumed())) {
+					 IO.println("Thiese cars has milage more than average " + cars[i].getCarId() + " " + cars[i].getModel());
+			 }
+			  count++;
+		 }
+		
+		  if(count<1){
+			  IO.println("There is no car whose mileg is more than average");
+		  }
+		   
 	  }
 }

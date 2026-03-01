@@ -1,29 +1,29 @@
 import java.util.*;
 
-class Solution {
-    public boolean exist(char[][] board, String word) {
-        for(int i = 0;i<board.length;i++) {
-            for(int j =0;j<board[i].length;j++) {
-                if(board[j].equals(word)) {
-                    word.charAr(i) = " ";
-                }
-            }
-        }
-        for(int i=0;i<word.length();i++) {
-            if(word(i) != " ") {
-                return false;
-            }
-        }
-        return true;
-    }
-	void main() {
-		String [][] board = new String[][] {
-		{"A","B","C","E"},{"S","F","C","S"},{"A","D","E","E"}
-		};
-		String word = "SEE";
-		exist(board,word);
-	}
-}
+// class Solution {
+    // public boolean exist(char[][] board, String word) {
+        // for(int i = 0;i<board.length;i++) {
+            // for(int j =0;j<board[i].length;j++) {
+                // if(board[j].equals(word)) {
+                    // word.charAr(i) = " ";
+                // }
+            // }
+        // }
+        // for(int i=0;i<word.length();i++) {
+            // if(word(i) != " ") {
+                // return false;
+            // }
+        // }
+        // return true;
+    // }
+	// void main() {
+		// String [][] board = new String[][] {
+		// {"A","B","C","E"},{"S","F","C","S"},{"A","D","E","E"}
+		// };
+		// String word = "SEE";
+		// exist(board,word);
+	// }
+// }
 
 
     // class Solution {

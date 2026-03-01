@@ -1,11 +1,5 @@
 class Test {
-    int x = 10;
-
-    class B {
-        void show() {
-            System.out.println(x);
-        }
-    }
+	
 
     public static void main(String[] args) {
 
