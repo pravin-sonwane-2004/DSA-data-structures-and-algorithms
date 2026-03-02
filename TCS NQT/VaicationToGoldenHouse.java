@@ -30,9 +30,17 @@ class VaicationToGoldenHouse {
 		int arr [] = {5 ,3 ,7 ,14, 18, 1 ,18 ,4 ,8 ,3};
 		int n = 10;
 		int k= 15;
-		
+		int currSum = 0;
+		int left = 0;
 		for(int i=0;i<arr.length-1;i++) {
-			
+			currSum += arr[i];
+			while(currSum>k) {
+				currSum -= arr[left];
+				left++;
+			}
+			if(currSum == k) {
+				IO.println(left+1 + "   "+ (i+1));
+			}
 		}
 	}                                
 }
