@@ -10,6 +10,11 @@
 
 
 class SubArraySum {
+	void main() {
+		int arr [] = new int[] {3,3,1,5,1,5};	
+		Map <Integer,Integer> map = new HashMap<>();
+		
+	}
 	// this is ordnary sliding window 
 	// void main() {
 		// int howMany = 0;
