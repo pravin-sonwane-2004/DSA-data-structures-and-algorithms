@@ -1,5 +1,64 @@
 import java.util.*;
+class Solution {
 
+    public List<Integer> findDisappearedNumbers(int[] nums) {
+
+        int i = 0;
+
+        while(i < nums.length) {
+
+            int correct = nums[i] - 1;
+
+            if(nums[i] != nums[correct]) {
+                int temp = nums[i];
+                nums[i] = nums[correct];
+                nums[correct] = temp;
+            }
+            else {
+                i++;
+            }
+        }
+
+        List<Integer> list = new ArrayList<>();
+
+        for(int j = 0; j < nums.length; j++) {
+            if(nums[j] != j + 1) {
+                list.add(j + 1);
+            }
+        }
+
+        return list;
+    }
+	void main () {
+		int arr [] = {4,3,2,7,8,2,3,1};
+		 IO.println(findDisappearedNumbers(arr));
+	}
+}
+// class Solution {
+    // public List<Integer> findDisappearedNumbers(int[] nums) {
+        // List<Integer> list = new ArrayList<>();
+
+        // for(int i = 0; i < nums.length; i++) {
+            // int index = Math.abs(nums[i]) - 1;
+            // if(nums[index] > 0) {
+                // nums[index] = -nums[index];
+            // }
+        // }
+
+        // for(int i = 0; i < nums.length; i++) {
+            // if(nums[i] > 0) {
+                // list.add(i + 1);
+            // }
+        // }
+
+        // return list;
+    // }
+	
+	// void main () {
+		// int arr [] = {4,3,2,7,8,2,3,1};
+		 // IO.println(findDisappearedNumbers(arr));
+	// }
+// }
 // class Solution {
     // public boolean exist(char[][] board, String word) {
         // for(int i = 0;i<board.length;i++) {
