@@ -1,39 +1,39 @@
 import java.util.*;
-class Solution {
+// class Solution {
 
-    public List<Integer> findDisappearedNumbers(int[] nums) {
+    // public List<Integer> findDisappearedNumbers(int[] nums) {
 
-        int i = 0;
+        // int i = 0;
 
-        while(i < nums.length) {
+        // while(i < nums.length) {
 
-            int correct = nums[i] - 1;
+            // int correct = nums[i] - 1;
 
-            if(nums[i] != nums[correct]) {
-                int temp = nums[i];
-                nums[i] = nums[correct];
-                nums[correct] = temp;
-            }
-            else {
-                i++;
-            }
-        }
+            // if(nums[i] != nums[correct]) {
+                // int temp = nums[i];
+                // nums[i] = nums[correct];
+                // nums[correct] = temp;
+            // }
+            // else {
+                // i++;
+            // }
+        // }
 
-        List<Integer> list = new ArrayList<>();
+        // List<Integer> list = new ArrayList<>();
 
-        for(int j = 0; j < nums.length; j++) {
-            if(nums[j] != j + 1) {
-                list.add(j + 1);
-            }
-        }
+        // for(int j = 0; j < nums.length; j++) {
+            // if(nums[j] != j + 1) {
+                // list.add(j + 1);
+            // }
+        // }
 
-        return list;
-    }
-	void main () {
-		int arr [] = {4,3,2,7,8,2,3,1};
-		 IO.println(findDisappearedNumbers(arr));
-	}
-}
+        // return list;
+    // }
+	// void main () {
+		// int arr [] = {4,3,2,7,8,2,3,1};
+		 // IO.println(findDisappearedNumbers(arr));
+	// }
+// }
 // class Solution {
     // public List<Integer> findDisappearedNumbers(int[] nums) {
         // List<Integer> list = new ArrayList<>();
