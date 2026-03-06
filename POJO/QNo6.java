@@ -42,11 +42,7 @@ class QNo6 {
         Employee[] emp = new Employee[size];
 
         for(int i = 0; i < emp.length; i++) {
-            emp[i] = new Employee();
-        }
-
-        for(int i = 0; i < emp.length; i++) {
-
+			emp[i] = new Employee();
             System.out.println("Enter Employee Id ");
             emp[i].setEmpId(sc.nextInt());
             sc.nextLine();
