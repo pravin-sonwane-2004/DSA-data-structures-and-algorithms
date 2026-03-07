@@ -1,3 +1,4 @@
+//it is hard to implement and hard to understand so let it ill use other tecniques
 class CyclicSort {
 	
 	void main() {

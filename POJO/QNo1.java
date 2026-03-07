@@ -52,15 +52,16 @@ class STMAAP {
 	public static void main(String [] a) {
 		Scanner sc = new Scanner (System.in);
 		Student student [] = new Student[5];
+		
 		// student[0] = new Student(33,"Name" ,new int[]{121,1212,21});
 		IO.println("Enter Each Student Details" );
 		for(int i=0;i<student.length;i++) {
+			student[i] = new Student();
 			IO.println("set name");
 			student[i].setName() = sc.nextLine();
 			student[i].setrollNo() = sc.nextInt();
 			student[i].setMarks() = sc.nextInt();
 			
-			student[i] = new Student()
 		}
 		
 		

@@ -16,8 +16,8 @@ class Solution {
 		return count;
 	}
 	void main() {
-	int arr [] = new int[]{1,1,1};
-	IO.println(subarraySum(arr,2));	
+	int arr [] = new int[]{2,3,5,3,1,3,8};
+	IO.println(subarraySum(arr,8));	
 	}
 }
 
