@@ -1,25 +1,38 @@
 import java.util.*;       
 
+// Input: height = [1,8,6,2,5,4,8,3,7]
+// Output: 49
+// Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. 
+//In this case, the max area of water (blue section) the container can contain is 49.
+// Example 2:
+
+// Input: height = [1,1]
+// Output: 1
+
 class Solution {
-    public int subarraySum(int[] nums, int k) {
-		Map<Integer,Integer> map = new HashMap<>();
-		int sum = 0 , count = 0;
-		
-		map.put(0,1);
-		for(int i=0;i<nums.length;i++) {
-			sum+= nums[i];
-			if(map.containsKey(sum-k)) {
-				count += map.get(sum-k);
-			}
-			map.put(sum,map.getOrDefault(sum,0)+1);
-		}
-		return count;
-	}
-	void main() {
-	int arr [] = new int[]{2,3,5,3,1,3,8};
-	IO.println(subarraySum(arr,8));	
-	}
+	
+	
 }
+// class Solution {
+    // public int subarraySum(int[] nums, int k) {
+		// Map<Integer,Integer> map = new HashMap<>();
+		// int sum = 0 , count = 0;
+		
+		// map.put(0,1);
+		// for(int i=0;i<nums.length;i++) {
+			// sum+= nums[i];
+			// if(map.containsKey(sum-k)) {
+				// count += map.get(sum-k);
+			// }
+			// map.put(sum,map.getOrDefault(sum,0)+1);
+		// }
+		// return count;
+	// }
+	// void main() {
+	// int arr [] = new int[]{2,3,5,3,1,3,8};
+	// IO.println(subarraySum(arr,8));	
+	// }
+// }
 
 // class Solution {
 
