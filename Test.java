@@ -1,9 +1,9 @@
-import java.util.*;
+// import java.util.*;
 
-class Test {
-	void main() {
+// class Test {
+	// void main() {
 		// missing number code
-		int arr [] = new int[]{1,5,7,9};
+		// int arr [] = new int[]{1,5,7,9};
 		// int i =0;
 		// int count = 0;
 		// while(i<nums.length) {
@@ -18,23 +18,23 @@ class Test {
 	// }
 	// }
 // }
-		List<Integer> list = new ArrayList<>();
-		int index = 0;
-		for(int i = 0;i<arr.length;i++) {
-			index = Math.abs(arr[i])-1;
-			if(arr[index]>0) {
-				arr[index] = -arr[index];
-			}
-		}
-		for(int i=0;i<arr.length;i++) {
-			if(arr[i] > 0) {
-				list.add(i+1);
-			}
-		}
-		IO.println(list);
-	}
+		// List<Integer> list = new ArrayList<>();
+		// int index = 0;
+		// for(int i = 0;i<arr.length;i++) {
+			// index = Math.abs(arr[i])-1;
+			// if(arr[index]>0) {
+				// arr[index] = -arr[index];
+			// }
+		// }
+		// for(int i=0;i<arr.length;i++) {
+			// if(arr[i] > 0) {
+				// list.add(i+1);
+			// }
+		// }
+		// IO.println(list);
+	// }
 	
-}
+// }
 
 // class Test {
     // public int subarraySum(int[] nums, int k) {
@@ -66,5 +66,27 @@ class Test {
 	// public static int main() {
 		// IO.println("fsfs0");
 		// return 1;
+	// }
+// }
+
+// class Test {
+	// void main() {
+		// for(int i=0;i<=100;i++) {
+			// if(isit(i)) {
+				// IO.println(i);
+			// }
+		// }
+	// }
+	// boolean isit(int n) {
+		// if(n<=2) return false;
+		// if(n==2) return true;
+		// if(n%2==0) return false;
+		
+		// for(int i=2;i*i<=n;i++) {
+			// if(n%i == 0) {
+				// return false;
+			// }
+		// }
+		// return true;
 	// }
 // }
