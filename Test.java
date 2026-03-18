@@ -90,3 +90,109 @@
 		// return true;
 	// }
 // }
+
+// import java.util.*;
+// class Test {
+    // public void firstUniqueEven(int[] nums) {
+        // Map<Integer,Integer> map = new TreeMap<>();
+        
+        // for(int i=0;i<nums.length;i++) {
+            // map.put(nums[i],map.getOrDefault(nums[i],0)+1);
+        // }
+		// IO.println(map);
+		// for(int n : map.getValue()) {
+			// if(n % 2 == 0) {
+				// IO.println(n);
+			// }
+		// }
+        // return -1;
+    // }
+// void main() {
+	// int arr [] = new int[] {1,2,2,2,3,33,3,3};
+	// firstUniqueEven(arr);
+// }
+// }
+
+// class Animal {
+    // void makeSound() {
+        // System.out.println("The animal makes a sound");
+    // }
+// }
+
+// class Dog extends Animal {
+    // @Override // This tells the compiler we are overriding the parent method
+    // void makeSound() {
+        // System.out.println("The dog barks");
+    // }
+// }
+
+// class Cat extends Animal {
+    // @Override
+    // void makeSound() {
+        // System.out.println("The cat meows");
+    // }
+// }
+
+// class Test  {
+	
+	// void main() {
+		// Dog d = new Dog();
+		// d.makeSound();
+	// }	
+// }
+
+import java.util.*;
+class Test {
+	void main() {
+		 int nums [] = {2,43,1,4,6};
+		
+		int max = Integer.MIN_VALUE;
+		int min = Integer.MIN_VALUE;
+		Map<Integer,Integer> map = new HashMap<>();
+		for(int i=0;i<nums.length;i++) {
+			map.put(nums[i],map.getOrDefault(nums[i],0)+1);
+		}
+		// ArrayList<Integer> list = new ArrayList<>(map.size());
+		List<Integer> list = new ArrayList<>(map.keySet());
+		
+		for(int n : map.keySet()) {
+			list.add(n);
+		}
+		IO.println(list.get(list.size()-2));
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
