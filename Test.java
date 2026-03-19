@@ -141,30 +141,73 @@
 	// }	
 // }
 
-import java.util.*;
-class Test {
-	void main() {
-		 int nums [] = {2,43,1,4,6};
+// import java.util.*;
+// class Test {
+	// void main() {
+		 // int nums [] = {2,43,1,4,6};
 		
-		int max = Integer.MIN_VALUE;
-		int min = Integer.MIN_VALUE;
-		Map<Integer,Integer> map = new HashMap<>();
-		for(int i=0;i<nums.length;i++) {
-			map.put(nums[i],map.getOrDefault(nums[i],0)+1);
-		}
+		// int max = Integer.MIN_VALUE;
+		// int min = Integer.MIN_VALUE;
+		// Map<Integer,Integer> map = new HashMap<>();
+		// for(int i=0;i<nums.length;i++) {
+			// map.put(nums[i],map.getOrDefault(nums[i],0)+1);
+		// }
 		// ArrayList<Integer> list = new ArrayList<>(map.size());
-		List<Integer> list = new ArrayList<>(map.keySet());
+		// List<Integer> list = new ArrayList<>(map.keySet());
 		
-		for(int n : map.keySet()) {
-			list.add(n);
-		}
-		IO.println(list.get(list.size()-2));
-	}
+		// for(int n : map.keySet()) {
+			// list.add(n);
+		// }
+		// IO.println(list.get(list.size()-2));
+	// }
+// }
+
+
+
+class A {
+    static {
+        System.out.println("Static A");
+    }
+
+    {
+        System.out.println("Instance A");
+    }
+
+    A() {
+        System.out.println("Constructor A");
+        show();
+    }
+
+    void show() {
+        System.out.println("A show");
+    }
 }
 
+class B extends A {
+    static {
+        System.out.println("Static B");
+    }
 
+    int x = 10;
 
+    {
+        System.out.println("Instance B");
+    }
 
+    B() {
+        System.out.println("Constructor B");
+    }
+
+    void show() {
+        System.out.println("B show x = " + x);
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        new B();
+    }
+}
 
 
 

@@ -8,10 +8,33 @@ import java.util.*;
 
 // Input: height = [1,1]
 // Output: 1
+class A {
+    A() {
+        System.out.println("A Constructor");
+        show();
+    }
 
-class Solution {
-	
-	
+    void show() {
+        System.out.println("A show");
+    }
+}
+
+class B extends A {
+    int x = 10;
+
+    B() {
+        System.out.println("B Constructor");
+    }
+
+    void show() {
+        System.out.println("B show, x = " + x);
+    }
+}
+
+public class Solution {
+    public static void main(String[] args) {
+        new B();
+    }
 }
 // class Solution {
     // public int subarraySum(int[] nums, int k) {
