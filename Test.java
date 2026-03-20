@@ -164,50 +164,50 @@
 
 
 
-class A {
-    static {
-        System.out.println("Static A");
-    }
+// class A {
+    // static {
+        // System.out.println("Static A");
+    // }
 
-    {
-        System.out.println("Instance A");
-    }
+    // {
+        // System.out.println("Instance A");
+    // }
 
-    A() {
-        System.out.println("Constructor A");
-        show();
-    }
+    // A() {
+        // System.out.println("Constructor A");
+        // show();
+    // }
 
-    void show() {
-        System.out.println("A show");
-    }
-}
+    // void show() {
+        // System.out.println("A show");
+    // }
+// }
 
-class B extends A {
-    static {
-        System.out.println("Static B");
-    }
+// class B extends A {
+    // static {
+        // System.out.println("Static B");
+    // }
 
-    int x = 10;
+    // int x = 10;
 
-    {
-        System.out.println("Instance B");
-    }
+    // {
+        // System.out.println("Instance B");
+    // }
 
-    B() {
-        System.out.println("Constructor B");
-    }
+    // B() {
+        // System.out.println("Constructor B");
+    // }
 
-    void show() {
-        System.out.println("B show x = " + x);
-    }
-}
+    // void show() {
+        // System.out.println("B show x = " + x);
+    // }
+// }
 
-public class Test {
-    public static void main(String[] args) {
-        new B();
-    }
-}
+// public class Test {
+    // public static void main(String[] args) {
+        // new B();
+    // }
+// }
 
 
 
