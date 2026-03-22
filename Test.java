@@ -269,22 +269,37 @@
 // • Output:
 // 1 3
 
-class VaicationToGoldenHouse {
-	void main() {
-		int arr [] = {5 ,3 ,7 ,14, 18, 1 ,18 ,4 ,8 ,3};
-		int n = 10;
-		int k= 15;
-		int currSum = 0;
-		int left = 0;
-		for(int i=0;i<arr.length-1;i++) {
-			currSum += arr[i];
-			while(currSum>k) {
-				currSum -= arr[left];
-				left++;
-			}
-			if(currSum == k) {
-				IO.println(left+1 + "   "+ (i+1));
-			}
+// class Test {
+// 	void main() {
+// 		Integer a = 10;
+		
+// 		for(int i =0;i<100;i++) {
+// 			j = 19;
+// 		IO.println(a);
+// 		}
+// 	}                                
+// }
+
+class User {
+    int id;
+
+    User(int id) {
+        this.id = id;
+    }
+}
+
+
+class Test {
+	void main () {
+		User obj = new User(2);
+		obj = new User(2);
+		User obj1 = new User(2);
+		
+		if(obj == obj1) {
+			IO.println(obj.equals(obj1));
 		}
-	}                                
+		else {
+			IO.println("false");
+		}
+	}
 }
