@@ -1,39 +1,39 @@
-import java.util.*;       
+// import java.util.*;       
 
-// Input: height = [1,8,6,2,5,4,8,3,7]
-// Output: 49
-// Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. 
-//In this case, the max area of water (blue section) the container can contain is 49.
-// Example 2:
+// // Input: height = [1,8,6,2,5,4,8,3,7]
+// // Output: 49
+// // Explanation: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. 
+// //In this case, the max area of water (blue section) the container can contain is 49.
+// // Example 2:
 
-// Input: height = [1,1]
-// Output: 1
-class A {
-    A() {
-        System.out.println("A Constructor");
-        show();
-    }
+// // Input: height = [1,1]
+// // Output: 1
+// class A {
+//     A() {
+//         System.out.println("A Constructor");
+//         show();
+//     }
 
-    void show() {
-        System.out.println("A show");
-    }
-}
+//     void show() {
+//         System.out.println("A show");
+//     }
+// }
 
-class B extends A {
-    int x = 10;
+// class B extends A {
+//     int x = 10;
 
-    B() {
-        System.out.println("B Constructor");
-    }
+//     B() {
+//         System.out.println("B Constructor");
+//     }
 
-    void show() {
-        System.out.println("B show, x = " + x);
-    }
-}
+//     void show() {
+//         System.out.println("B show, x = " + x);
+//     }
+// }
 
 public class Solution {
     public static void main(String[] args) {
-        new B();
+
     }
 }
 // class Solution {
