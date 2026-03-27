@@ -209,10 +209,23 @@
     // }
 // }
 
+import java.util.HashMap;
+import java.util.Map;
 
-
-
-
+class Test {
+	void main() {
+		int arr[] = {2,3,1,4,1,5,2};
+		int k = 4;
+		Map<Integer,Integer> map = new HashMap<>();
+		for(int n:arr) {
+			int ans = k-n;
+			if(map.containsKey(ans)) {
+				IO.println(n+ " " + ans);
+			}
+			map.put(n, 1);
+		}
+	}
+}
 
 
 
@@ -280,26 +293,26 @@
 // 	}                                
 // }
 
-class User {
-    int id;
+// class User {
+//     int id;
 
-    User(int id) {
-        this.id = id;
-    }
-}
+//     User(int id) {
+//         this.id = id;
+//     }
+// }
 
 
-class Test {
-	void main () {
-		User obj = new User(2);
-		obj = new User(2);
-		User obj1 = new User(2);
+// class Test {
+// 	void main () {
+// 		User obj = new User(2);
+// 		obj = new User(2);
+// 		User obj1 = new User(2);
 		
-		if(obj == obj1) {
-			IO.println(obj.equals(obj1));
-		}
-		else {
-			IO.println("false");
-		}
-	}
-}
+// 		if(obj == obj1) {
+// 			IO.println(obj.equals(obj1));
+// 		}
+// 		else {
+// 			IO.println("false");
+// 		}
+// 	}
+// }
