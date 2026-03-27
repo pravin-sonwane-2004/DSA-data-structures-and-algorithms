@@ -12,18 +12,22 @@
 
 import java.util.Arrays;
 class TwoSum{
-    static int[] arr(int[] arr, int target) {
-		for(int i=0;i<arr.length-1;i++){
-				if(arr[i]+arr[i+1]==target) {
-					return new int [] {i,i+1};
-			}
-		}   
-		return new int []{};
+    // static int[] arr(int[] arr, int target) {
+		// for(int i=0;i<arr.length-1;i++){
+				// if(arr[i]+arr[i+1]==target) {
+					// return new int [] {i,i+1};
+			// }
+		// }   
+		// return new int []{};
+	// }
+	
+	//im gonna use hashmap here so lets see how i do it
+	int [] returnArr(int arr [] , int target) {
+		
 	}
 	void main() {
 		int target = 9;
 		int [] nums =  {3,2,4};
 		IO.println(Arrays.toString(arr(nums,target)));
-		
 	}
 }
