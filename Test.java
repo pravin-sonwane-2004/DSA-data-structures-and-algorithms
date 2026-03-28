@@ -210,20 +210,17 @@
 // }
 
 import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 class Test {
+	  public int [] removeDuplicates(int[] nums) {
+        
+		
+        return nums;
+    }
 	void main() {
-		int arr[] = {2,3,1,4,1,5,2};
-		int k = 4;
-		Map<Integer,Integer> map = new HashMap<>();
-		for(int n:arr) {
-			int ans = k-n;
-			if(map.containsKey(ans)) {
-				IO.println(n+ " " + ans);
-			}
-			map.put(n, 1);
-		}
+		   int arr [] = new int [] {0,0,1,1,1,2,2,3,3,4};
+		   IO.println(Arrays.toString(removeDuplicates(arr)));
 	}
 }
 

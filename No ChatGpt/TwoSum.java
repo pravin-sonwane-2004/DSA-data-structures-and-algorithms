@@ -22,9 +22,17 @@ class TwoSum{
 	// }
 	
 	//im gonna use hashmap here so lets see how i do it
-	int [] returnArr(int arr [] , int target) {
-		
-	}
+	   public int[] twoSum(int[] nums, int target) {
+            Map<Integer,Integer> map = new HashMap<>();
+            for(int i=0;i<nums.length;i++) {
+                int element = target - nums[i];
+                if(map.containsKey(element)) {
+                    return new int[] {map.get(element),i};
+                }
+                map.put(nums[i],i);
+            }
+            return new int[]{};
+        }
 	void main() {
 		int target = 9;
 		int [] nums =  {3,2,4};
