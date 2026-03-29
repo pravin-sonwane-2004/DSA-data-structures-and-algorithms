@@ -213,14 +213,17 @@ import java.util.HashMap;
 import java.util.*;
 
 class Test {
-	  public int [] removeDuplicates(int[] nums) {
-        
-		
-        return nums;
+	  int [] removeDuplicates(int[] nums,int target) {
+		for(int i=1;i<nums.length;i++) {
+			if(nums[i]+nums[i-1]==target) {
+				  return new int[]{i,i-1};
+			}
+		}  
+        return new int[]{};
     }
 	void main() {
-		   int arr [] = new int [] {0,0,1,1,1,2,2,3,3,4};
-		   IO.println(Arrays.toString(removeDuplicates(arr)));
+		   int arr [] = new int [] {2,3,5,7,9,0};
+		   IO.println(Arrays.toString(removeDuplicates(arr,8)));
 	}
 }
 

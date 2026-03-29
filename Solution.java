@@ -31,11 +31,36 @@
 //     }
 // }
 
-public class Solution {
-    public static void main(String[] args) {
-
-    }
-}
+// public class Solution {
+    // public static void main(String[] args) {
+		  // int [][] arr1 = new int[][]{
+			  // {1,2,3},
+				  // {4,5,6},
+					  // {7,8,9}
+		  // };
+		  // int [][] arr2 = new int[][]{
+			  // {1,2,3},
+				  // {4,5,6},
+					  // {7,8,9}
+		  // };
+		  // int [][] newArray = new int [3] [3];
+		  
+		// for(int i =0;i<arr1.length;i++) {
+			  // for(int j = 0;j<arr2.length;j++) {
+				  // for(int k =0; k<arr2.length;k++) {
+					   // newArray[i][j] += arr1[i][k]*arr2[k][j];
+				  // }
+			  // }
+		  // }
+		  
+		// for(int i =0;i<newArray.length;i++) {
+			  // for(int j = 0;j<newArray[i].length;j++) {
+				   // IO.print(newArray[i][j] + " ");
+			  // }
+			  // IO.println();
+		  // }	
+    // }
+// }
 // class Solution {
     // public int subarraySum(int[] nums, int k) {
 		// Map<Integer,Integer> map = new HashMap<>();
@@ -188,8 +213,28 @@ public class Solution {
     // }
 	
 	
-	
-	
+	class A {
+		A() {
+			new A();
+		}         
+   void main() {
+	   A a = new A();
+   }
+}
+
+void show(Object s);
+void show(String j);
+show(null);
+
+class B extends A {
+    void show() { System.out.println("B"); }
+}
+class Solution {
+	void main() {
+		IO.println(1+3+"s");
+	}
+}
+
 //class Solution {
 //	static int power (int n , int x) {
 //		int d = 1;
