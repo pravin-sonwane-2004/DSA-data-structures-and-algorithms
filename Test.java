@@ -209,21 +209,21 @@
     // }
 // }
 
-import java.util.HashMap;
-import java.util.*;
+// import java.util.HashMap;
+// import java.util.*;
 
-class A {
-	A() {
-		private A() {
+// class A {
+// 	A() {
+// 		private A() {
 			
-		}
-	}
-	class B extends A () {
-		IO.println("From b");
-	}
-}
-class Test {
-	A b = new B();
+// 		}
+// 	}
+// 	class B extends A () {
+// 		IO.println("From b");
+// 	}
+// }
+// class Test {
+	// A b = new B();
 	  // int [] removeDuplicates(int[] nums,int target) {
 		// for(int i=1;i<nums.length;i++) {
 			// if(nums[i]+nums[i-1]==target) {
@@ -236,7 +236,7 @@ class Test {
 		   // int arr [] = new int [] {2,3,5,7,9,0};
 		   // IO.println(Arrays.toString(removeDuplicates(arr,8)));
 	// }
-}
+// }
 
 
 
