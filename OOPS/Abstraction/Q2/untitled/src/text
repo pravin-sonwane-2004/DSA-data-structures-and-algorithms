@@ -1,0 +1,25 @@
+Question 44: Create an abstract class BankAccount to perform banking operations.
+Create abstract class BankAccount with:
+
+Abstract methods deposit() and withdraw()
+
+Variable balance
+
+Create subclasses:
+
+SavingsAccount ? minimum balance required
+
+CurrentAccount ? no minimum balance
+
+Program should perform deposit and withdrawal operations and display final balance.
+
+Input
+Account Type: Savings
+Initial Balance: 1000
+Deposit: 500
+Withdraw: 300
+Output
+Final Balance: 1200
+
+Asked In Companies:
+Practice Question

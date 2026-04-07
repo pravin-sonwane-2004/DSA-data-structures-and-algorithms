@@ -327,3 +327,268 @@
 // 		}
 // 	}
 // }
+
+// class A {
+	
+// }
+// class B extends A {
+	
+// }
+
+// class Test {
+	// void main() {
+		// A obj = new A();
+		
+		// if(obj instanceof A) {
+			// A a = (A) obj;
+			  // System.out.println("Cast done");
+			// } else {
+			   // System.out.println("Not possible");
+			// }
+		// }
+	// }
+	
+// import java.util.*;
+// class Test {
+	// boolean isPelindrome(String s,int start,int end) {
+		// while(start<=end) {
+			// if(s.charAt(start) != s.charAt(end)) {
+				   // return false;
+			// }
+			// start++;
+			// end--;
+		// }
+		// return true;
+	// }
+    // public void longestPalindrome(String s) {
+        // int max = 0;
+        // int secMax = 0;
+        // List<String> list = new ArrayList<>();
+        // for(int i = 0;i<s.length();i++) {
+            // int end = s.length()-1;  
+			
+                // while(i<end) {
+					// if(isPelindrome(s,i,end)) {
+					  // list.add(s.substring(i,end+1));
+				  // }
+				  // end--;
+				  // i++;
+				// }
+        // }
+		// IO.println(list);
+    // }
+	
+	// void main() {
+		// String s = "babad";
+		// longestPalindrome(s);
+		
+	// }
+// }
+
+// class A {
+    // A() {
+        // System.out.println("A Constructor");
+        // show();
+    // }
+
+    // void show() {
+        // System.out.println("A show");
+    // }
+// }
+
+// class B extends A {
+    // int x = 10;
+
+    // B() {
+        // System.out.println("B Constructor");
+    // }
+
+    // void show() {
+        // System.out.println("B show, x = " + x);
+    // }
+// }
+
+// public class Test {
+    // public static void main(String[] args) {
+        // new B();
+    // }
+// }
+
+// class A {
+    // A() {
+        // this(10);
+        // System.out.println("A default");
+    // }
+
+    // A(int x) {
+        // System.out.println("A parameterized");
+    // }
+// }
+
+// class B extends A {
+    // B() {
+        // super();
+        // System.out.println("B default");
+    // }
+// }
+
+// public class Test {
+    // public static void main(String[] args) {
+        // new B();
+    // }
+// }
+
+//A parameterized -> A default -> b default
+
+
+// class A {
+    // A() {
+        // System.out.println("A");
+    // }
+// }
+
+// class B extends A {
+    // B() {
+        // this(10);
+        // System.out.println("B default");
+    // }
+
+    // B(int x) {
+        // System.out.println("B param");
+    // }
+// }
+
+// public class Test {
+    // public static void main(String[] args) {
+        // new B();
+    // }
+// }
+
+// class A {
+    // final int x;
+
+    // A() {
+        // x = 10;
+    // }
+// }
+
+// class B extends A {
+    // B() {
+        // System.out.println(x);
+    // }
+// }
+
+// class Test {
+	// void main() {
+		// new B();
+	// }
+// }
+
+
+// class A {
+    // static {
+        // System.out.println("Static A");
+    // }
+
+    // {
+        // System.out.println("Instance A");
+    // }
+
+    // A() {
+        // System.out.println("Constructor A");
+    // }
+// }
+
+// class B extends A {
+    // static {
+        // System.out.println("Static B");
+    // }
+
+    // {
+        // System.out.println("Instance B");
+    // }
+
+    // B() {
+        // System.out.println("Constructor B");
+    // }
+// }
+
+// public class Test {
+    // public static void main(String[] args) {
+        // new B();
+    // }
+// }
+//Static A, Static B , A constructor , B constructor 
+
+
+// class Singleton {
+	// private static Singleton object;
+	// private Singleton()  {
+		// IO.println("OBJ");
+	// }
+	// public static Singleton isCreated()  {
+		// if(object == null) {
+		// object = new Singleton();
+	// }
+	// return object;
+	// }
+// }
+
+// class Test {
+	
+	// void main() {
+		// int n = 28;
+		// for(int i=0;i<n/2;i++) {
+			
+		// }
+		 // Singleton s = Singleton.isCreated();
+		// Singleton s1 = Singleton.isCreated();
+		 // IO.println(s==s1);
+	// }
+// }
+
+import java.util.*;
+class User {
+	int id;
+	String username;
+	String Email;
+	
+	void setId(int id)  {
+		this.id = id;
+	}
+	int getId() {
+		return id;
+	}
+	void setUserName(String username) {
+		this.username = username;
+	}
+	String getUserName() {
+		return username;
+	}
+	
+	void setEmail(String username) {
+		this.username = username;
+	}
+	String getEmail() {
+		return Email;
+	}
+	
+	
+	User(int id,String username,String Email) {
+		this.username = username;
+		this.Email = Email;
+		this.id = id;
+	}
+}
+class Test {
+	void main() {
+		 User [] user = new User[5];
+		 for(int i=0;i<user.length;i++) {
+			  user[i] = new User(i+3,"Pravin","Pravin@2004");
+		 }
+		 
+		 for(User u : user) {
+            System.out.println("ID: " + u.getId() + ", Name: " + u.getUserName()  + ", Email: " + u.getEmail());
+		 }
+	}
+}

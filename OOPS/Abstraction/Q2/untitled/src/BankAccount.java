@@ -1,4 +1,10 @@
-package PACKAGE_NAME;
+public abstract class BankAccount {
+    protected int balance; //
 
-public class BankAccount {
+    abstract String deposit(int amount);
+    abstract String withdraw(int amount);
+
+    String showBalance() {
+        return "Balance is " + balance;
+    }
 }
