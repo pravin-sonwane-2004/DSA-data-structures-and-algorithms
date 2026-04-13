@@ -1,3 +1,4 @@
+
 // import java.util.*;
 
 // class Test {
@@ -546,49 +547,114 @@
 		 // IO.println(s==s1);
 	// }
 // }
+// class A {
+	// void add() {
+		// IO.println("Fdjh");
+	// }
+// }
+
+// interface i imp{
+	// void 
+// }
 
 import java.util.*;
-class User {
-	int id;
-	String username;
-	String Email;
+// class Solution {
+		// public String simplifyPath(String path) {
+			// StringBuilder sb = new StringBuilder();
+			// Stack<Character> stack = new Stack<>();
+			// for(char c : path.toCharArray()) {
+				// if(stack.isEmpty() ) {
+					 // stack.push(c);
+				// }
+				// else {
+					// if(stack.peek() != '/') {
+						// stack.push(c);
+					// }
+					// else if(c != '/' && stack.peek() == '/'){
+						// stack.push(c);
+					// }
+				// }
+			// }
+			// if(stack.peek() == '/') {
+				// stack.remove(stack.peek());
+			// }
+			// for(char c : stack) {
+				// sb.append(c);
+			// }
+			// return sb.toString();
+		// }
+	// }
+
+// int[] arr = {12, 35, 1, 10, 34, 1};
+// int firstMax = Integer.MIN_VALUE;
+// int secMax = Integer.MIN_VALUE;
+
+// for (int i = 0; i < arr.length; i++) {
+    // if (arr[i] > firstMax) {
+        // secMax = firstMax;
+        // firstMax = arr[i];
+    // } else if (arr[i] > secMax && arr[i] <	firstMax) {
+        // secMax = arr[i];
+    // }
+// }
+// secMax is 34
+// IO.println(secMax);
+
+	// }
 	
-	void setId(int id)  {
-		this.id = id;
-	}
-	int getId() {
-		return id;
-	}
-	void setUserName(String username) {
-		this.username = username;
-	}
-	String getUserName() {
-		return username;
-	}
-	
-	void setEmail(String username) {
-		this.username = username;
-	}
-	String getEmail() {
-		return Email;
-	}
-	
-	
-	User(int id,String username,String Email) {
-		this.username = username;
-		this.Email = Email;
-		this.id = id;
-	}
+// }
+		// Solution s = new Solution();
+		// String path = "/home//foo/";
+		// IO.println(s.simplifyPath(path));
+		
+		// int [][] mat = new int[][]{
+			// {1,2,3},
+				// {4,5,6},
+					// {7,8,9}
+		// };
+		
+		
+		// for(int i=0;i<mat.length;i++) {
+			// for(int j=0;j<mat[i].length;j++) {
+				// IO.println(mat[i][j]);
+			// }
+		// }
+		
+		// int [][]result = new int[3][3];
+		
+		// IO.println("Multiplication is ");
+		
+		// for(int i = 0;i<mat.length;i++) {
+			// for(int j=0;j<mat[i].length;j++) {
+				
+					// result[i][j] = mat[i][j] +mat[i][j];
+			// }
+		// }
+		
+		// for(int i=0;i<result.length;i++) {
+			// for(int j=0;j<result[i].length;j++) {
+				// IO.println(result[i][j]);
+			// }
+		// }
+	// }
+// }
+
+
+
+public class Test {
+    public static void main(String[] args) {
+        int a = 10;
+        double b = a / 4.0;
+        System.out.println(b);
+    }
 }
-class Test {
-	void main() {
-		 User [] user = new User[5];
-		 for(int i=0;i<user.length;i++) {
-			  user[i] = new User(i+3,"Pravin","Pravin@2004");
-		 }
-		 
-		 for(User u : user) {
-            System.out.println("ID: " + u.getId() + ", Name: " + u.getUserName()  + ", Email: " + u.getEmail());
-		 }
-	}
-}
+
+
+
+
+
+// class Test {
+	// public static void main(String [] args) {
+		
+	// }
+// }

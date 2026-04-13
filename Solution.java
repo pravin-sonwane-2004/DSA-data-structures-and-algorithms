@@ -213,27 +213,29 @@
     // }
 	
 	
-	class A {
-		A() {
-			new A();
-		}         
-   void main() {
-	   A a = new A();
-   }
-}
+	// class A {
+		// A() {
+			// new A();
+		// }         
+   // void main() {
+	   // A a = new A();
+   // }
+// }
 
-void show(Object s);
-void show(String j);
-show(null);
+// void show(Object s);
+// void show(String j);
+// show(null);
 
-class B extends A {
-    void show() { System.out.println("B"); }
-}
-class Solution {
-	void main() {
-		IO.println(1+3+"s");
-	}
-}
+// class B extends A {
+    // void show() { System.out.println("B"); }
+	
+	
+// }
+// class Solution {
+	// void main() {
+		// IO.println(1+3+"s");
+	// }
+// }
 
 //class Solution {
 //	static int power (int n , int x) {
@@ -361,3 +363,25 @@ class Solution {
 // }
 
 // }
+
+import java.util.*;
+class Solution {
+	void main() {
+		backspaceCompare("ab#c","ab#c");
+	}
+    public void backspaceCompare(String s, String t) {
+        
+        Stack<Character> s1 = new Stack<>();
+        Stack<Character> t1 = new Stack<>();
+
+        for(char c : s.toCharArray()) {
+            if(!s1.isEmpty() && c == '#') {
+                s1.pop();
+            }
+            else{
+                s1.push(c);
+            }
+        }
+		IO.println(s1);
+    }
+}
