@@ -641,13 +641,13 @@ import java.util.*;
 
 
 
-public class Test {
-    public static void main(String[] args) {
-        int a = 10;
-        double b = a / 4.0;
-        System.out.println(b);
-    }
-}
+// public class Test {
+    // public static void main(String[] args) {
+        // int a = 10;
+        // double b = a / 4.0;
+        // System.out.println(b);
+    // }
+// }
 
 
 
