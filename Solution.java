@@ -364,24 +364,100 @@
 
 // }
 
-import java.util.*;
+// import java.util.*;
+// class Solution {
+	// void main() {
+		// backspaceCompare("ab#c","ab#c");
+	// }
+    // public void backspaceCompare(String s, String t) {
+        
+        // Stack<Character> s1 = new Stack<>();
+        // Stack<Character> t1 = new Stack<>();
+
+        // for(char c : s.toCharArray()) {
+            // if(!s1.isEmpty() && c == '#') {
+                // s1.pop();
+            // }
+            // else{
+                // s1.push(c);
+            // }
+        // }
+		// IO.println(s1);
+    // }
+// }
+
+// You have a Product class with:
+
+// price
+// rating
+// name
+// Q:
+// Where will you use Comparable?
+// Where will you use Comparator?
+// Write sorting logic for price descending
+
+import java.util.Arrays;
+
+class Product implements Comparable<Product> {
+	int price;
+	int rating;
+	String name;
+	
+	  // Getter and Setter for price
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    // Getter and Setter for rating
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    // Getter and Setter for name
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+	
+	public Product(int price, int rating,String name) {
+		this.price = price;
+		this.rating = rating;
+		this.name = name;
+	}
+
+	@Override
+    public int compareTo(Product other) {
+        return Integer.compare(this.price, other.price); // ascending by price
+    }
+}                                                 
+
 class Solution {
 	void main() {
-		backspaceCompare("ab#c","ab#c");
+		Product[] p = new Product[3];
+		for(int i=0;i<p.length;i++) {
+			p[i] = new Product(4-i,4-i,"pravin");
+		}
+		
+			IO.println("Unsorted");
+			for(Product d : p) {
+			IO.println(d.getPrice() + "  - "+ d.getRating());
+		}
+		Arrays.sort(p);
+		//
+		IO.println("sorted");
+			for(Product d : p) {
+			IO.println(d.getPrice() + "  - "+ d.getRating());
+		}
 	}
-    public void backspaceCompare(String s, String t) {
-        
-        Stack<Character> s1 = new Stack<>();
-        Stack<Character> t1 = new Stack<>();
-
-        for(char c : s.toCharArray()) {
-            if(!s1.isEmpty() && c == '#') {
-                s1.pop();
-            }
-            else{
-                s1.push(c);
-            }
-        }
-		IO.println(s1);
-    }
 }

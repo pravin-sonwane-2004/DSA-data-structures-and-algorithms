@@ -653,8 +653,41 @@ import java.util.*;
 
 
 
-// class Test {
-	// public static void main(String [] args) {
+class Test {
+	public static void main(String [] args) {
+		// Integer arr [] = new Integer[]{3,3,3,2,21,1,2,3,5,6,4,4,4,5,6,7,5};
+		// Set<Integer> set = new HashSet<>(Arrays.asList(3,1,3,3,3,1,12,64,4));
+		// IO.println(set);
+		// Map<String,Integer> map = new TreeMap<>();
+		// map.put("P",10);
+		// map.put("S",20);
+		// map.put("A",30);
+		// map.put("B",40);
+		// map.put("C",50);
 		
-	// }
-// }
+		// Iterable i = map.iterator();
+		
+		// while(i.hasNext()) {
+			// IO.println(i.getKey());
+		// }
+		
+		// for(Map.Entry<String,Integer> entry : map.entrySet()) {
+			// IO.println(entry.getKey() + " => " + entry.getValue() + " " + entry);
+		// }
+		// for(Map entry : map) {
+			// IO.println(entry.getKey() + " => " + entry.getValue() + " " + entry);
+		// }
+		
+		List <Integer> list = new ArrayList<>();
+		list.add(10);
+		list.add(10);
+		list.add(10);
+		list.add(10);
+		list.add(10);
+		
+		Iterator<Integer> i = list.iterator();
+		while(i.hasNext()) {
+			IO.println(i.next());
+		}
+	}
+}
