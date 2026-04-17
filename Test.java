@@ -678,16 +678,32 @@ class Test {
 			// IO.println(entry.getKey() + " => " + entry.getValue() + " " + entry);
 		// }
 		
-		List <Integer> list = new ArrayList<>();
-		list.add(10);
-		list.add(10);
-		list.add(10);
-		list.add(10);
-		list.add(10);
+		// List <Integer> list = new ArrayList<>();
+		// list.add(10);
+		// list.add(10);
+		// list.add(10);
+		// list.add(10);
+		// list.add(10);
 		
-		Iterator<Integer> i = list.iterator();
-		while(i.hasNext()) {
-			IO.println(i.next());
+		// Iterator<Integer> i = list.iterator();
+		// while(i.hasNext()) {
+			// IO.println(i.next());
+		// }
+		
+		int arr [] = new int[]{1,4,5,0,0,0};
+		int arr2 [] = new int []{4,6,8};
+		
+		int i = 0; 
+		int j = 0;
+		
+		while(i != arr.length && j!= arr2.length) {
+			if(arr[i] < arr2[j]) {
+				arr[i++] =  arr2[j++];
+			}
+			else if(arr[i]>arr2[j]) {
+				 i++;
+			}
 		}
+		IO.println(Arrays.toString(arr));
 	}
 }
