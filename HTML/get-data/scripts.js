@@ -1,30 +1,24 @@
 const tablebody =  document.getElementById("tablebody");
 const submit = document.getElementById("submit");
 
-async function fetchFata() {
-    var count = 0;
+async function fetchData() {
+
     const response = await fetch("http://localhost:8080/api/users/getall");
-    if(!response.ok) {
-        throw new Error("Cant Fetch Data");
+
+    if(response.ok) {   
+    let row = "";
+    const data = await response.json();
+       data.forEach(user => {
+         row += `<tr>
+            <td> ${user.name}</td>
+            <td> ${user.email}</td>
+            <td> ${user.phone} </td>
+        </tr> `
+       });
+       tablebody.innerHTML = row;
     }
     else {
-
-        const data = await response.json();
-    console.log("button clicked")
-
-    data.forEach(element => {
-        tablebody.innerHTML += `<tr>  
-            <td>${element.id}</td>
-            <td>${element.name}</td>
-            <td>${element.email}</td>
-            <td>${element.phone}</td>
-        </tr>`;
-        count++;
-    });
-    if(count == 0) {
-        document.createTextNode("No data Exista");
+        throw new Error("");
     }
-    }
-} 
-
-submit.addEventListener("click", fetchFata);
+}
+submit.addEventListener("click", fetchData);

@@ -27,5 +27,19 @@ class Q1{
             arr[i] = sc.nextInt();
         }
         IO.println(Arrays.toString(arr));
+
+        int first = Integer.MIN_VALUE;
+        int secL = Integer.MIN_VALUE;
+
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]>first) {
+                secL = first;
+                first = arr[i];
+            }
+            else if(arr[i]>first && arr[i]!=secL){
+                secL = arr[i];
+            }
+        }
+        IO.print(secL);
     }
 }

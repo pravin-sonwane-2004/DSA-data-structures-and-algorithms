@@ -397,67 +397,106 @@
 // Write sorting logic for price descending
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
-class Product implements Comparable<Product> {
-	int price;
-	int rating;
-	String name;
+// class Product implements Comparable<Product> {
+// 	int price;
+// 	int rating;
+// 	String name;
 	
-	  // Getter and Setter for price
-    public int getPrice() {
-        return price;
-    }
+// 	  // Getter and Setter for price
+//     public int getPrice() {
+//         return price;
+//     }
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
+//     public void setPrice(int price) {
+//         this.price = price;
+//     }
 
-    // Getter and Setter for rating
-    public int getRating() {
-        return rating;
-    }
+//     // Getter and Setter for rating
+//     public int getRating() {
+//         return rating;
+//     }
 
-    public void setRating(int rating) {
-        this.rating = rating;
-    }
+//     public void setRating(int rating) {
+//         this.rating = rating;
+//     }
 
-    // Getter and Setter for name
-    public String getName() {
-        return name;
-    }
+//     // Getter and Setter for name
+//     public String getName() {
+//         return name;
+//     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+//     public void setName(String name) {
+//         this.name = name;
+//     }
 	
-	public Product(int price, int rating,String name) {
-		this.price = price;
-		this.rating = rating;
-		this.name = name;
-	}
+// 	public Product(int price, int rating,String name) {
+// 		this.price = price;
+// 		this.rating = rating;
+// 		this.name = name;
+// 	}
 
-	@Override
-    public int compareTo(Product other) {
-        return Integer.compare(this.price, other.price); // ascending by price
-    }
-}                                                 
+// 	@Override
+//     public int compareTo(Product other) {
+//         return Integer.compare(this.price, other.price); // ascending by price
+//     }
+// }                                                 
+
+// class Solution {
+// 	void main() {
+// 		Product[] p = new Product[3];
+// 		for(int i=0;i<p.length;i++) {
+// 			p[i] = new Product(4-i,4-i,"pravin");
+// 		}
+		
+// 			IO.println("Unsorted");
+// 			for(Product d : p) {
+// 			IO.println(d.getPrice() + "  - "+ d.getRating());
+// 		}
+// 		Arrays.sort(p);
+// 		//
+// 		IO.println("sorted");
+// 			for(Product d : p) {
+// 			IO.println(d.getPrice() + "  - "+ d.getRating());
+// 		}
+// 	}
+
+	import java.util.HashMap;
+import java.util.Map;
 
 class Solution {
-	void main() {
-		Product[] p = new Product[3];
-		for(int i=0;i<p.length;i++) {
-			p[i] = new Product(4-i,4-i,"pravin");
-		}
-		
-			IO.println("Unsorted");
-			for(Product d : p) {
-			IO.println(d.getPrice() + "  - "+ d.getRating());
-		}
-		Arrays.sort(p);
-		//
-		IO.println("sorted");
-			for(Product d : p) {
-			IO.println(d.getPrice() + "  - "+ d.getRating());
-		}
+
+		void main  () {
+		IO.print(characterReplacement("AABABBA", 2));
 	}
+	
+    public int characterReplacement(String s, int k) {
+        Map<Character, Integer> map = new HashMap<>();
+        int left = 0;
+        int maxFreq = 0;
+        int ans = 0;
+
+        for (int right = 0; right < s.length(); right++) {
+            char rightChar = s.charAt(right);
+
+            map.put(rightChar, map.getOrDefault(rightChar, 0) + 1);
+            maxFreq = Math.max(maxFreq, map.get(rightChar));
+
+            int windowLen = right - left + 1;
+
+            while (windowLen - maxFreq > k) {
+                char leftChar = s.charAt(left);
+                map.put(leftChar, map.get(leftChar) - 1);
+                left++;
+
+                windowLen = right - left + 1;
+            }
+
+            ans = Math.max(ans, windowLen);
+        }
+
+        return ans;
+    }
 }

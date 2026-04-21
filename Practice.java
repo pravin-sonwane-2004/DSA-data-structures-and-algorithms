@@ -1,17 +1,17 @@
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+
 class Practice {
 	void main() {
-		PriorityQueue<Integer>  q = new PriorityQueue<>();
-		q.add(10);
-		q.add(30);
-		q.add(40);
-		q.add(50);
-		q.add(60);
-		q.add(70);
+		String s = "dsssssdgd";
+		        Map<Character,Integer> map = new HashMap<>();
 
-		q.remove();
-		q.remove();
-		IO.print(q.peek());
-		IO.println(q);
+		    for(int i =0;i<s.length();i++) {
+            char currChar = s.charAt(i);
+            map.put(currChar,map.getOrDefault(currChar,0)+1);
+        }
+		for(Map.Entry<Character,Integer> entry : map.entrySet()) {
+			IO.println(entry);
+		}
 	}
 }

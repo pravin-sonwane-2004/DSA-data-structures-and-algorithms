@@ -18,12 +18,13 @@ public class Impl {
    void main() {
      TreeNode root = new TreeNode(5);
        
-        root.left = new TreeNode(10);
-        root.right = new TreeNode(20);
+        // root.left = new TreeNode(10);
+        // root.right = new TreeNode(20);
 
-        root.right.left = new TreeNode(30);
-        root.right.right = new TreeNode(40);
-        levelOrder(root);
+        // root.right.left = new TreeNode(30);
+        // root.right.right = new TreeNode(40);
+        // levelOrder(root);
+        
    }
 
     public static void levelOrder(TreeNode root) {
