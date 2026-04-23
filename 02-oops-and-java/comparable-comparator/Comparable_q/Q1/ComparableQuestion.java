@@ -34,15 +34,30 @@ class Product implements Comparable<Product> {
         this.rating = rating;
         this.name = name;
     }
-		// @Override
-		// public int compareTo(Product other) {
-			// return Integer.compare(this.getPrice(),other.getPrice());
-		// }
-		
-		// @Override
-		// public int compareTo(Product other) {
-			// return this.getName().compareTo(other.getName());
-		// }
+
+//    @Override
+//    public int compareTo(Product o) {
+//        if(this.price<o.price) {
+//            return 1;
+//        }
+//        else if(this.price > o.price) return -1;
+//        else return 0;
+//    }
+
+    @Override
+    public String toString() {
+        return name + " -> " + price + " - " + rating;
+//        return "eeeeeeee";
+    }
+        @Override
+        public int hashCode() {
+            return 10;
+        }
+
+    @Override
+    public int compareTo(Product o) {
+        return Integer.compare(this.price, o.price);
+    }
 	}
 class ComparableQuestion {
     void main() {
@@ -57,7 +72,7 @@ class ComparableQuestion {
         Collections.sort(list);
 
         for (Product d : list) {
-            IO.println(d.getName() + " -> " + d.getPrice() + " - " + d.getRating());
+            IO.println(d.getName() + " -> " + d.getPrice() + " - " + (d.getRating()));
         }
     }
 }

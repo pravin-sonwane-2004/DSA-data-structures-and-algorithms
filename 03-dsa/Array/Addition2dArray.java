@@ -69,6 +69,6 @@ class Addition2dArray {
             }
             System.out.println();
         }
-
+        sc.close();
     }
 }

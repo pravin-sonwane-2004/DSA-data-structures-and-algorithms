@@ -7,20 +7,7 @@ Input:
  ["Banana", "Apple", "Mango", "Cherry"]
 Output:
  ["Apple", "Banana", "Cherry", "Mango"]*/
- import java.util.*;
-public class Alpha implements Comparable<Alpha>{
-	 public Alpha(){}
-	 
-	 String str;
-	 public Alpha(String str){
-		 this.str=str;
-	 }
-	 @Override
-	 public int compareTo(Alpha another){
-		 
-	 } 
- }
- 
+
 public class Practice{
 	 public static void main(String[] args){
 		ArrayList<Alpha> al=new ArrayList<>();

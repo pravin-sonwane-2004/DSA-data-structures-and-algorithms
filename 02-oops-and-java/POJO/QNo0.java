@@ -71,7 +71,7 @@ class Calculate {
 		 return "Enter Valid Data";
 	}
 }
-class Main {
+class MainCLASS {
 	void main() {
 		Scanner sc = new Scanner(System.in);
 		Student student = new Student();

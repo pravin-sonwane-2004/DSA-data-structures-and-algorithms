@@ -1,4 +1,3 @@
-package revision_everything;
 public class Palindrome_Recursion {
     public static int factorial(int n ) {
         if(n  == 0 || n == 1) {

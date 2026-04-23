@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01-java-basics/01-java-basics.iml" filepath="$PROJECT_DIR$/01-java-basics/01-java-basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-oops-and-java/02-oops-and-java.iml" filepath="$PROJECT_DIR$/02-oops-and-java/02-oops-and-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-dsa/03-dsa.iml" filepath="$PROJECT_DIR$/03-dsa/03-dsa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-problem-sets/04-problem-sets.iml" filepath="$PROJECT_DIR$/04-problem-sets/04-problem-sets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/99-archive/99-archive.iml" filepath="$PROJECT_DIR$/99-archive/99-archive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-oops-and-java/OOPS/Abstraction/Abstraction.iml" filepath="$PROJECT_DIR$/02-oops-and-java/OOPS/Abstraction/Abstraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-oops-and-java/Class-Object-Implementation/Class-Object-Implementation.iml" filepath="$PROJECT_DIR$/02-oops-and-java/Class-Object-Implementation/Class-Object-Implementation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA.iml" filepath="$PROJECT_DIR$/DSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-oops-and-java/OOPS/Inheritance/Inheritance.iml" filepath="$PROJECT_DIR$/02-oops-and-java/OOPS/Inheritance/Inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-problem-sets/June-July-Aug-18/June-July-Aug-18.iml" filepath="$PROJECT_DIR$/04-problem-sets/June-July-Aug-18/June-July-Aug-18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-java-basics/Looping/Looping.iml" filepath="$PROJECT_DIR$/01-java-basics/Looping/Looping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-oops-and-java/OOPS/Abstraction/Q2/Q2.iml" filepath="$PROJECT_DIR$/02-oops-and-java/OOPS/Abstraction/Q2/Q2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-oops-and-java/comparable-comparator/comparable.iml" filepath="$PROJECT_DIR$/02-oops-and-java/comparable-comparator/comparable.iml" />
+    </modules>
+  </component>
+</project>

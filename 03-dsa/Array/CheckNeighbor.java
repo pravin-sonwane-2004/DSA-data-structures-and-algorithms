@@ -24,7 +24,7 @@ class CheckNeighbor{
 	}
 	void main() {
 		int [] arr = {1, 3, 1, 4, 1, 0};
-		CheckNeighbor obj = new CheckNeighbor();
+		// CheckNeighbor obj = new CheckNeighbor();
 		int result = retNeb(arr);
 		System.out.println(result);	
 	}

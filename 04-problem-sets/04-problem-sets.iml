@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/In 2nd Exam I Solved Only 4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LEETCODE 75 HARD" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/No ChatGpt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RSL Company" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TCS NQT" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
