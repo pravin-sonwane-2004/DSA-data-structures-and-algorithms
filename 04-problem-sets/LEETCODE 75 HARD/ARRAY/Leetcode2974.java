@@ -1,4 +1,4 @@
-package ARRAY;
+
 
 
 // 2974. Minimum Number Game

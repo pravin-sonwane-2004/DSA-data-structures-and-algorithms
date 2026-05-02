@@ -1,7 +1,7 @@
 public class Leetcode7383 {
     static void main(String[] x) {
-        Practice p = new Practice();
-        IO.println(p.mirrorDistance(25));
+        // Practice p = new Practice();
+        // IO.println(p.mirrorDistance(25));
     }
 
     public int mirrorDistance(int n) {

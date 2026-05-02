@@ -1,5 +1,7 @@
 import java.util.*;
 class WiggleSort {
+	private int j;
+
 	void main() {
 		int arr [] = new int[]{1,5,1,1,6,4};
 		

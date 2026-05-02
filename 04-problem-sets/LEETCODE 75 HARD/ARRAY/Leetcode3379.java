@@ -1,4 +1,4 @@
-package ARRAY;
+
 
 // //index:   0  1  2  3
 // // nums=[3,-2,1,1]

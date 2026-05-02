@@ -1,4 +1,3 @@
-package ARRAY;
 
 // Example 1:
 

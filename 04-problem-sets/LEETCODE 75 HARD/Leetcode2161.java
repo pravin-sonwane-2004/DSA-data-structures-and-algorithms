@@ -2,7 +2,7 @@ public class Leetcode2161 {
     
 void main() {
     Solution s = new Solution();
-    int [] arr = new int [] {}
+    int [] arr = new int [] {};
 }
 }
 class Solution {
