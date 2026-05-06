@@ -1,0 +1,24 @@
+### Conventional Commit Prefixes
+
+feat: A new feature
+fix: A bug fix
+docs: Documentation only changes
+style: Changes that do not affect the meaning of the code (white-space, formatting, etc)
+refactor: A code change that neither fixes a bug nor adds a feature
+perf: A code change that improves performance
+test: Adding missing tests or correcting existing tests
+build: Changes that affect the build system or external dependencies
+ci: Changes to CI configuration files and scripts
+chore: Other changes that don't modify src or test files
+revert: Reverts a previous commit
+perf: Code change that improves performance
+security: Fixes a security vulnerability
+ui: Changes to UI or style files
+deps: Update or add dependencies
+init: Initial commit or project setup
+learn: General prefix for adding notes or new knowledge.
+til: "Today I Learned"—specifically for daily knowledge snippets.
+study: Used for deep-dives, research notes, or course materials.
+note: For general observations or documentation of concepts.
+research: For findings from experiments or technical investigations.
+idea: For brainstorming or documenting potential future concepts.

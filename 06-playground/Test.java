@@ -652,8 +652,8 @@ import java.util.*;
 
 
 
-class Test {
-	public static void main(String [] args) {
+// class Test {
+	// public static void main(String [] args) {
 		// Integer arr [] = new Integer[]{3,3,3,2,21,1,2,3,5,6,4,4,4,5,6,7,5};
 		// Set<Integer> set = new HashSet<>(Arrays.asList(3,1,3,3,3,1,12,64,4));
 		// IO.println(set);
@@ -689,20 +689,136 @@ class Test {
 			// IO.println(i.next());
 		// }
 		
-		int arr [] = new int[]{1,4,5,0,0,0};
-		int arr2 [] = new int []{4,6,8};
+		// int arr [] = new int[]{1,4,5,0,0,0};
+		// int arr2 [] = new int []{4,6,8};
 		
-		int i = 0; 
-		int j = 0;
+		// int i = 0; 
+		// int j = 0;
 		
-		while(i != arr.length && j!= arr2.length) {
-			if(arr[i] < arr2[j]) {
-				arr[i++] =  arr2[j++];
-			}
-			else if(arr[i]>arr2[j]) {
-				 i++;
-			}
-		}
-		IO.println(Arrays.toString(arr));
-	}
+		// while(i != arr.length && j!= arr2.length) {
+			// if(arr[i] < arr2[j]) {
+				// arr[i++] =  arr2[j++];
+			// }
+			// else if(arr[i]>arr2[j]) {
+				 // i++;
+			// }
+		// }
+		// IO.println(Arrays.toString(arr));
+	// }
+// }
+
+
+// class Test {
+	// void main() {
+		// Map<Integer,Integer>map = Map.of(1,20, 3,2,4,5,6,7);
+	 // for(Map.Entry<Integer,Integer>entry : map.entrySet()) {
+		 // IO.println(entry.keySet());
+	 // }
+	// }
+// }              
+
+// list : list is dynamic array which growas with the size increses 
+// list default capacity = 10;
+// 16 
+// 1.5 x
+
+// class Test {
+	// void main() {
+		// Map<Integer,Integer> map = new HashMap<>();
+		
+		
+		// map.put(1,4);
+		// map.put(1,3);
+		// map.put(1,4);
+		// map.put(1,3);
+		// map.put(1,4);
+		// map.put(1,3);
+		
+		
+		// list.remove(2);
+		// list.set(1, 100);
+		// list.add("OM");
+		
+	
+		
+		// IO.println(map);
+		
+		// String str = "Omya";
+		// str =  "ommm";
+												 
+		
+		// String o = new String("vishal");
+				// IO.println(o.hashCode());
+		// String ob = new String("vishal");
+				// IO.println(ob.hashCode());
+				
+		
+		// String o = new String("OM");
+		// IO.println(o.hashCode());
+		// String om = "OM";
+		// IO.println(om.hashCode());
+		// String str = "ABC CBA";
+		// String o = str.trim();
+		// String [] s = str.split(" ");
+			
+		// IO.println(Arrays.toStrig(s));
+		// IO.println(o.equals(ob));
+		
+		
+	// }
+// }
+
+ // public class ListNode {
+    // int val;
+    // ListNode next;
+    // ListNode() {}
+    // ListNode(int val) { this.val = val; }
+    // ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ // }
+ 
+ 
+ 
+ 
+ // class Test{
+	 // void main() {
+		// int n = 123;        
+		// int reverse = 1;
+        // while(n!=0) {
+            // int lastD = n%10;
+            // reverse *= lastD *10;    
+            // n=n/10;
+        // }
+		// IO.println(reverse);
+		// }
+ // 
+ 
+ // class A {
+    // int x = 10;
+// }
+// class B extends A {
+    // int x = 20;
+// }
+// public class Test {
+    // public static void main(String[] args) {
+        // A obj = new B();
+        // System.out.println(obj.x);
+    // }
+// }
+
+
+class A {
+    static void show() {
+        System.out.println("A");
+    }
+}
+class B extends A {
+    static void show() {
+        System.out.println("B");
+    }
+}
+public class Test {
+    public static void main(String[] args) {
+        B obj = new B();
+        obj.show();
+    }
 }

@@ -1,4 +1,4 @@
-class Solution {
+class Leetcode2108 {
     public String firstPalindrome(String[] words) {
         for(int i=0;i<words.length;i++) {
             int start =0;
