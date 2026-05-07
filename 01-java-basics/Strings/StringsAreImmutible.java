@@ -1,5 +1,3 @@
-package StringsQ;
-
 public class StringsAreImmutible {
     void main() {
         //this is not override, this is pointing to another referance

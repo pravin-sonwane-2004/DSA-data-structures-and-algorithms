@@ -806,19 +806,62 @@ import java.util.*;
 // }
 
 
-class A {
-    static void show() {
-        System.out.println("A");
-    }
-}
-class B extends A {
-    static void show() {
-        System.out.println("B");
-    }
-}
-public class Test {
-    public static void main(String[] args) {
-        B obj = new B();
-        obj.show();
-    }
-}
+// class A {
+
+
+    // static void show() {
+        // System.out.println("A");
+    // }
+// }
+// class B extends A {
+    // static void show() {
+        // System.out.println("B");
+    // }
+// }
+// public class Test {
+    // public static void main(String[] args) {
+        // B obj = new B();
+        // obj.show();
+    // }
+// }
+// class Singleton {
+	// private static Singleton instance;
+	// private Singleton(){
+		// IO.println("OBJ Created");
+	// }
+	// public static Singleton createObj() {
+		// if(instance == null) {
+			// return instance =  new Singleton();
+		// }
+		// return instance;
+	// }
+// }
+// class Test {
+	// void main(){
+		// Singleton s = Singleton.createObj();
+		// Singleton s1 = Singleton.createObj();
+		// Singleton s2 = Singleton.createObj();
+	// }
+// }
+
+// public enum Singleton{
+	// INSTANCE;
+	
+	// private int val;
+	// public void setVal(int val) {
+		// this.val = val;
+	// }
+	// public int getVal() {
+		// return this.val;
+	// }    
+// }
+
+// class Test{
+	// void main() {
+		// Singleton s = Singleton.INSTANCE;
+		// Singleton s1 = Singleton.INSTANCE;
+		// s.setVal(1000);
+		// s1.setVal(12);
+		// IO.println(s1==s);
+	// }
+// }
