@@ -865,3 +865,83 @@ import java.util.*;
 		// IO.println(s1==s);
 	// }
 // }
+// class Test{
+	
+// public static void reverseRows(int[][] matrix) {
+    // int top = 0;
+    // int bottom = matrix.length - 1;
+    
+    // while (top < bottom) {
+        // Swap the entire row references
+        // int[] temp = matrix[top];
+        // matrix[top] = matrix[bottom];
+        // matrix[bottom] = temp;
+        
+        // top++;
+        // bottom--;
+    // }
+}
+
+// public static void reverseRows(int[][] matrix) {
+	
+	// for(int i=0;i<matrix.length;i++) {
+		// int start = 0;
+		// int end = matrix[i].length-1;
+		
+		// while(start <= end) {
+			// int temp = matrix[i][start];
+			// matrix[i][start] = matrix[i][end];
+			// matrix[i][end] = temp;
+			
+			// start++;
+			// end--;
+		// }
+	// }
+// }
+
+// void main() {
+	// int mat [][] = new int[][]{
+		// {1,2,3},
+			// {4,5,6},
+				// {7,8,9}
+	// } ;
+	// for(int i=0;i<mat.length;i++) {
+		// for(int j =0;j<mat[i].length;j++) {
+			// IO.print(mat[i][j]);
+		// }    
+			// IO.println();
+	// }                         IO.println();
+
+	// reverseRows(mat);
+	  // for(int i=0;i<mat.length;i++) {
+		// for(int j =0;j<mat[i].length;j++) {
+			// IO.print(mat[i][j]);
+		// }    
+			// IO.println();
+	// }
+// }
+// }
+
+
+// Custom exception class
+class ExceptionName extends Exception {
+    public ExceptionName(String message) {
+        super(message); // No 'return' keyword here
+    }
+}
+
+class Test {
+    public static void main(String[] args) {
+        try {
+            int a = 1;
+            int b = 0;
+            if (b == 0) {
+                throw new ExceptionName("Cannot divide by zero!");
+            }
+            int c = a / b;
+            System.out.println(c);
+        } catch (ExceptionName e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}

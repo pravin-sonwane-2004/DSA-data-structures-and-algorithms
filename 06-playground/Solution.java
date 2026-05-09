@@ -463,40 +463,60 @@ import java.util.Map;
 // 		}
 // 	}
 
-	import java.util.HashMap;
-import java.util.Map;
 
-class Solution {
+// class Solution {
 
-		void main  () {
-		IO.print(characterReplacement("AABABBA", 2));
-	}
+		// void main  () {
+		// IO.print(characterReplacement("AABABBA", 2));
+	// }
 	
-    public int characterReplacement(String s, int k) {
-        Map<Character, Integer> map = new HashMap<>();
-        int left = 0;
-        int maxFreq = 0;
-        int ans = 0;
+    // public int characterReplacement(String s, int k) {
+        // Map<Character, Integer> map = new HashMap<>();
+        // int left = 0;
+        // int maxFreq = 0;
+        // int ans = 0;
 
-        for (int right = 0; right < s.length(); right++) {
-            char rightChar = s.charAt(right);
+        // for (int right = 0; right < s.length(); right++) {
+            // char rightChar = s.charAt(right);
 
-            map.put(rightChar, map.getOrDefault(rightChar, 0) + 1);
-            maxFreq = Math.max(maxFreq, map.get(rightChar));
+            // map.put(rightChar, map.getOrDefault(rightChar, 0) + 1);
+            // maxFreq = Math.max(maxFreq, map.get(rightChar));
 
-            int windowLen = right - left + 1;
+            // int windowLen = right - left + 1;
 
-            while (windowLen - maxFreq > k) {
-                char leftChar = s.charAt(left);
-                map.put(leftChar, map.get(leftChar) - 1);
-                left++;
+            // while (windowLen - maxFreq > k) {
+                // char leftChar = s.charAt(left);
+                // map.put(leftChar, map.get(leftChar) - 1);
+                // left++;
 
-                windowLen = right - left + 1;
+                // windowLen = right - left + 1;
+            // }
+
+            // ans = Math.max(ans, windowLen);
+        // }
+
+        // return ans;
+    // }
+// }
+
+public class ExceptionName extends Exception {
+	  ExceptionName(String messege) {
+		  super(messege+"=== ");
+	  }
+}
+
+class Solution{
+	 void main() throws ExceptionName {
+	  try {
+            int a = 1;
+            int b = 0;
+            if (b == 0) {
+                throw new ExceptionName("Cannot divide by zero!");
             }
-
-            ans = Math.max(ans, windowLen);
+            int c = a / b;
+            System.out.println(c);
+        } catch (ExceptionName e) {
+            System.out.println(e.getMessage());
         }
-
-        return ans;
-    }
+	 }
 }
