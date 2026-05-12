@@ -499,24 +499,47 @@ import java.util.Map;
     // }
 // }
 
-public class ExceptionName extends Exception {
-	  ExceptionName(String messege) {
-		  super(messege+"=== ");
-	  }
-}
+// public class ExceptionName extends Exception {
+	  // ExceptionName(String messege) {
+		  // super(messege+"=== ");
+	  // }
+// }
+
+// class Solution{
+	 // void main() throws ExceptionName {
+	  // try {
+            // int a = 1;
+            // int b = 0;
+            // if (b == 0) {
+                // throw new ExceptionName("Cannot divide by zero!");
+            // }
+            // int c = a / b;
+            // System.out.println(c);
+        // } catch (ExceptionName e) {
+            // System.out.println(e.getMessage());
+        // }
+	 // }
+// }
+
+// class Solution {
+    // void main() {
+        // StringBuffer sb = new StringBuffer("Pravin");
+
+        // Create and start 3 distinct threads
+        // for (int i = 0; i < 3; i++) {
+            // new Thread(() -> {
+                // System.out.println("Value: " + sb.append("c"));
+            // }).start();
+			
+			 // new Thread(() -> {
+                // System.out.println("Value: " + sb.append("k"));
+            // }).start();
+        // }
+    // }
+// }
+
 
 class Solution{
-	 void main() throws ExceptionName {
-	  try {
-            int a = 1;
-            int b = 0;
-            if (b == 0) {
-                throw new ExceptionName("Cannot divide by zero!");
-            }
-            int c = a / b;
-            System.out.println(c);
-        } catch (ExceptionName e) {
-            System.out.println(e.getMessage());
-        }
-	 }
+    public static void main(String[] args) {
+    }
 }
