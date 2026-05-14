@@ -120,4 +120,3 @@ boolean circular() {
 		// li.findMid();
 		// IO.println("Length " + li.fildLength());
 	}
-}               

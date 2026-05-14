@@ -539,7 +539,18 @@ import java.util.Map;
 // }
 
 
-class Solution{
-    public static void main(String[] args) {
-    }
+// class Solution{
+// @SneakyThrows
+// public static void main(String[] args) {
+    // Thread.sleep(1000);
+// }
+// }
+
+// Reverse Linked List
+
+class Solution {
+	
+	void main() {
+		
+	}
 }
