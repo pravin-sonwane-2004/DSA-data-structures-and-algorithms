@@ -572,9 +572,80 @@ import java.util.Map;
 		   // }
 	// }
 // }
-
-class Node {
-	public static void head;
 	
-	Node(int data,Node )
+class LinkedList {
+    Node head; // Head of the list
+
+    class Node {
+        int data;
+        Node next;
+
+        Node(int d) {
+            data = d;
+            next = null;
+        }
+    }
+	
+	void insertAtBiginning(int val) {
+		Node node = new Node(val);
+		node.next= head;
+		head = node;
+	}
+	
+	void show() {
+		Node curr = head;
+		while(curr != null) {
+			IO.println(curr.data);
+			curr = curr.next; 
+		}
+	}
+	
+	void reverse() {
+		Node curr = head;
+		Node prev = null;
+		while(curr != null) {
+			 Node next = curr.next;
+			 curr.next  = prev;
+			 prev = curr;
+			 curr = next;
+		}
+		head = prev;
+	}
+	
+	LinkedList merge(LinkedList l1,LinkedList l2) {
+		LinkedList newL = new LinkedList();
+		
+		Node curr1 = l1.head;
+		Node curr2 = l2.head;
+		
+		while(curr1!= null && curr2!= null) {
+			Node pick;
+			 if(curr1.data <curr2.data) {
+				pick = curr1.data;  
+				curr1 = curr1.next;
+			 }
+			 else {
+				 pick = curr2.data;
+				 curr2 = curr2.next;
+			 }
+			 newL = pick;
+		}
+	}
+}
+class Solution {
+	void main() {
+		LinkedList ll = new LinkedList();
+		ll.insertAtBiginning(2);
+		ll.insertAtBiginning(3);
+		ll.insertAtBiginning(4);
+		ll.insertAtBiginning(5);
+		
+		LinkedList llM = new LinkedList();
+		
+		ll.insertAtBiginning(2);
+		ll.insertAtBiginning(3);
+		ll.insertAtBiginning(4);
+		ll.insertAtBiginning(5);
+			   
+	}
 }
