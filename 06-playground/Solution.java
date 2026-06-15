@@ -957,3 +957,205 @@ import java.util.Map;
 
 
 
+// class Solution {
+	// void main() {
+		// String s = "abc";
+		// String s2 = "cba";
+		// IO.println(s.contains(s2));
+	// }
+// }
+
+
+
+// class Student {
+	// String name;
+	// int fees;
+	
+ // Student(String name,int fees) {
+		// this.name = name;
+		// this.fees = fees;
+	// }
+	// Student(Student s) {
+		// this.name = s.name;
+		// this.fees = s.fees;
+	// }
+	// @Override
+	// public String toString() {
+		// return name + " = " + fees;
+	// }
+// }
+// class Solution {
+	// void main() {
+		// Student s = new Student("Pravin",44444);
+		// Student s2 = new Student(s);
+		
+		// IO.println(s.toString());
+		// IO.println(s2.toString());
+		
+	// }
+// }
+
+// class Student {
+	// private static Student instance;
+	
+	// private Student() {IO.println("this is");}
+
+	// public static Student createStudentInstance() {
+		 // if(instance == null) {
+			 // instance = new Student();
+		 // }
+		 // return instance;
+	// }
+// }
+
+// class Solution {
+	 // void main() {
+		 // Student.createStudentInstance();
+		 // Student.createStudentInstance();
+		 // Student.createStudentInstance();
+		 // Student.createStudentInstance();
+
+	 // }
+// }
+
+// class A {
+	// A() {
+		
+	// }
+	// void show () {
+		// IO.println("Show A");
+	// }
+	// void disp() {
+		// IO.println("Disp A");
+	// }
+// }
+
+
+// class B extends A {
+	// B() {
+		
+	// }
+	
+	// @Override
+	// void show () {
+		// IO.println("Show B");
+	// }
+// }
+
+// class Solution {
+	// void main(){
+	// A b = new A();
+	// b.show();
+	// b.disp();
+	// }
+// }
+
+// class Student {
+	// Student () {
+		// IO.println("Constructor");
+	// }
+	
+	// public static void Student() {
+		// IO.println("OBJECT");
+	// }
+// }
+// import java.util.*;
+
+// class Solution {
+	
+	// void main() {
+		 // Student s = new Student();
+		 // s.Student();
+		 // List<Integer>list=new ArrayList<>();
+		 // list.add(1);
+		 // list.add(2);
+		 // list.add(3);
+		 // list.add(4);
+		 
+		 // Iterator itr = list.iterator();
+		 
+		 // while(itr.hasNext()) {
+			 // IO.println(itr.next());	
+		 // }
+
+	// }
+// }
+
+
+// class Solution {
+	// void main() {
+		// int arr [] = new int []{1,2,3,4,6};
+		// for(int i=1;i<arr.length;i++) {
+			// if(arr[i]-1 != arr[i-1]) {
+				// IO.println(arr[i]-1);
+			// }
+		// }
+	// }
+// }
+
+//maximum sum
+
+
+// class Department {
+    // int id;
+    // String name;
+
+    // Department(int id, String name) {
+        // this.id = id;
+        // this.name = name;
+    // }
+// }
+
+// class Student {
+    // int id;
+    // String name;
+    // Department department;   // HAS-A relationship
+
+    // Student(int id, String name, Department department) {
+        // this.id = id;
+        // this.name = name;
+        // this.department = department;
+    // }
+
+    // @Override
+    // public String toString() {
+        // return name + " " + department.name;
+    // }
+// }
+
+// public class Solution {
+    // public static void main(String[] args) {
+        // Department d = new Department(1, "CSE");
+        // Student s = new Student(2, "Pravin", d);
+
+        // System.out.println(s);
+    // }
+// }
+
+// Input: banana
+// Expected Output:
+// b=1
+// a=3
+// n=2
+
+// Example
+// Input: java spring java sql spring java
+// Expected Output:
+// java=3
+// spring=2
+// sql=1
+
+
+class Solution{
+	void main() {
+		String str = "java spring java sql spring java";
+		Map<String,Integer>map = new HashMap<>();
+		String sk [] = str.split(" ");
+		for(String c : sk) {
+			map.put(c,map.getOrDefault(c,0)+1);
+		}
+		for(Map.Entry<String,Integer> e : map.entrySet()) {
+			IO.println(e);
+		}
+	}
+}
