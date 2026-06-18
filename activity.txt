@@ -1,1 +1,2 @@
 "2026-06-18 10:15:00" "init: bootstrap project structure"
+"2026-06-18 18:40:00" "docs: add initial project overview and setup instructions"
