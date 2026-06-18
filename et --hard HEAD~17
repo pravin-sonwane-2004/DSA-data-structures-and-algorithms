@@ -1,0 +1,445 @@
+[33mcommit 1b0264683ba18172badc3b9573888cc0eeed548a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Jun 26 18:55:41 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Jun 26 18:55:41 2026
+
+    docs: update API examples for profile operations
+
+[33mcommit 9011e5a181f442eb0e18e86c0f847c3478c2b747[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Jun 26 18:55:41 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Jun 26 18:55:41 2026
+
+    feat: add profile update endpoint
+
+[33mcommit ab13a698cd7791cd04bdd45a354418d930a07d09[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Jun 26 18:55:41 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Jun 26 18:55:41 2026
+
+    perf: optimize database query for user lookup
+
+[33mcommit afdae3fed58f7b897f0c952ea40483a863c11418[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Jun 26 18:55:40 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Jun 26 18:55:40 2026
+
+    style: format source code and remove unused imports
+
+[33mcommit daec8894a2ef9d5c215f97beb996f8186c7c47b2[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Jun 26 18:55:40 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Jun 26 18:55:40 2026
+
+    refactor: simplify exception handling across controllers
+
+[33mcommit fb39719667bfadf4885680d161d801294f90392c[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Jun 26 18:55:40 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Jun 26 18:55:40 2026
+
+    test: add authentication integration tests
+
+[33mcommit 4674b3c7f25296c7b3a619bf9085ab401666ff18[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Jun 26 18:55:40 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Jun 26 18:55:40 2026
+
+    fix: resolve token expiration handling
+
+[33mcommit 8f97aa4e498ae3902e812aaf4b65d3413ef54a78[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Jun 26 18:55:39 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Jun 26 18:55:39 2026
+
+    feat: add JWT token generation
+
+[33mcommit cfbc34e512b4c8096e28758bdc2ab94839e33e62[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Jun 26 18:55:39 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Jun 26 18:55:39 2026
+
+    docs: document authentication API endpoints
+
+[33mcommit 932a44d18e4a4abc1406952b57f846bd58851b61[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Jun 26 18:55:39 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Jun 26 18:55:39 2026
+
+    security: hash passwords using BCrypt
+
+[33mcommit ec8b0237ac95f7d30f88a429fd4742234980dd11[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Jun 26 18:55:38 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Jun 26 18:55:38 2026
+
+    feat: implement login authentication flow
+
+[33mcommit b88b5fc5649ca356dcb7311349a9ac7ccf035e67[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Jun 26 18:55:38 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Jun 26 18:55:38 2026
+
+    test: add unit tests for registration service
+
+[33mcommit ace87dedc814385a42e8e1ec20c70e0ba7f4705e[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Jun 26 18:55:38 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Jun 26 18:55:38 2026
+
+    refactor: extract validation logic into service layer
+
+[33mcommit 0f25c8d0fa16adca52ea39dac55af873793ad332[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Jun 26 18:55:38 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Jun 26 18:55:38 2026
+
+    fix: validate email before saving user
+
+[33mcommit 9554d69e911ff130cd6bddc66ddc0568730fa229[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Jun 26 18:55:37 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Jun 26 18:55:37 2026
+
+    feat: implement user registration endpoint
+
+[33mcommit 272602d2a70edf74aa979a6c1527b146ed8ce6c8[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Jun 26 18:55:37 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Jun 26 18:55:37 2026
+
+    docs: add initial project overview and setup instructions
+
+[33mcommit 8ad9a89d99ad1d7ba01c4fb68eab281b8adfe01f[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Jun 26 18:55:37 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Jun 26 18:55:37 2026
+
+    init: bootstrap project structure
+
+[33mcommit 72a61c764714aa00988c1b1be16fcd559e0eb65e[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Jun 19 12:26:21 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Jun 19 12:26:21 2026
+
+    This Account Is Suspended Trying to Access it
+
+[33mcommit be30a41edeadaec3c9215b625bbd572ef94129b8[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Thu May 21 00:26:15 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Thu May 21 00:26:15 2026
+
+    rule: no chatgpt applied
+
+[33mcommit 5cda4945098958a1b95a8c4037a0db5a144177de[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Sun May 25 19:30:00 2025
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Sun May 25 19:30:00 2025
+
+    Add two-pointer array practice problems
+
+[33mcommit f743381e046893aeb96b72edecef0ff6428f16eb[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Sat May 16 08:10:25 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Sat May 16 08:10:25 2026
+
+    feat: solving sove easy questions everyday
+
+[33mcommit e8c3ded9e868757ed45e8b3f877856835a150a10[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri May 15 07:59:59 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri May 15 07:59:59 2026
+
+    streak: today ill now able to code
+
+[33mcommit 480b9941319b6e577dc8ea6d14fbf9f76cbc257e[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Thu May 14 19:06:45 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Thu May 14 19:06:45 2026
+
+    feat: solving old problems
+
+[33mcommit 4e2bc1ea8c736b313216f8408a15e99a0595073b[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Tue May 12 19:55:36 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Tue May 12 19:55:36 2026
+
+    learn: today learned about the file handelling
+
+[33mcommit c3db97abdbafb563fe8a96021ace68f07a0c43bf[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Sat May 9 16:51:31 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Sat May 9 16:51:31 2026
+
+    revision: abut Exception
+
+[33mcommit 90fe8219aea9a8fcdb75409fbc90f1d660581452[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Thu May 7 16:41:53 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Thu May 7 16:41:53 2026
+
+    feat: learnt that there is a method for String that String.join(, words) for words array
+
+[33mcommit 585d9984895b2faf58df432d4083ef97d564df81[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Wed May 6 09:30:12 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Wed May 6 09:30:12 2026
+
+    update: revised the spring security
+
+[33mcommit 1c666f23610c5021356e0b02f5a3ef557b2fce04[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Sun May 3 14:10:01 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Sun May 3 14:10:01 2026
+
+    til: today i learnt how to reverse the string
+
+[33mcommit 664d58867fa6b13e8087e518de62721ae2bd28f6[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Sun May 3 00:17:28 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Sun May 3 00:17:28 2026
+
+    fetal : cleared the tree
+
+[33mcommit 3402809ca4829c55c5d27eb2a50bfb0abe68c50a[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Sat May 2 23:41:37 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Sat May 2 23:41:37 2026
+
+    feat: update DSA practice and Java learning notes
+
+[33mcommit 4fe3da45bb876ffc1fd7a4cfbef34cbe5705c751[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Thu Apr 23 14:58:23 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Thu Apr 23 14:58:23 2026
+
+    today understood how toString method works
+
+[33mcommit aa0574b94f8835bde194d4a457f2d83e8373bb95[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Wed Apr 22 15:40:27 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Wed Apr 22 15:40:27 2026
+
+    daily streak
+
+[33mcommit 44024e90f0744fa6afe4af3033252e874212b98a[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Wed Apr 22 15:40:08 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Wed Apr 22 15:40:08 2026
+
+    daily streak
+
+[33mcommit 9e9b83a0cccab956dfe856e25612105daeddd271[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Wed Apr 22 15:38:54 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Wed Apr 22 15:38:54 2026
+
+    daily streak
+
+[33mcommit 2f26bfc676a0b70fade2ab4acd11e1f94125c9f1[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Wed Apr 22 15:38:33 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Wed Apr 22 15:38:33 2026
+
+    streak
+
+[33mcommit 5183851b45b1fa8ea98f3f7da15500891875ec25[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Wed Apr 22 15:36:47 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Wed Apr 22 15:36:47 2026
+
+    restructure repository folders
+
+[33mcommit efed0b74dbb65eca1b615a718f67a19737a00be3[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Tue Apr 21 15:26:43 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Wed Apr 22 15:26:43 2026
+
+    solved some leetcode
+
+[33mcommit 58e01fe64619a4f4ec3939c61138ae24c99f48ed[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Sat Apr 18 14:59:33 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Sat Apr 18 14:59:33 2026
+
+    solving some next batches questions
+
+[33mcommit a1c12ffc5d7ffad4ab96035a92de2dcb25ca000d[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Apr 17 16:27:19 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Apr 17 16:27:19 2026
+
+    Today Fetched Data In Html From vaul
+
+[33mcommit dc19fe9adf9f95f729389e091c04884ee80bff44[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Apr 17 13:06:51 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Apr 17 13:06:51 2026
+
+    Today Solved Some Tree Traversal Question On Leetcode
+
+[33mcommit 6afbdff6d9811ca061a91644325c4bc64263ce5d[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Wed Apr 15 19:16:01 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Wed Apr 15 19:16:01 2026
+
+    Today Lernt compratable and comparator
+
+[33mcommit 6cde285447a5c4801af538841b36a6ab0ad199f1[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Tue Apr 14 15:51:30 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Tue Apr 14 15:51:30 2026
+
+    solved 5 leetcode questions including js
+
+[33mcommit 33bc9c9fc06e4edc2318899302ab2df0d67bf6c6[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Mon Apr 13 16:56:04 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Mon Apr 13 16:56:04 2026
+
+    right now focusing on project of bank so not able to focus on this repo
+
+[33mcommit 68ec86ab8c2c27489f1f5dfc2fc477e666c9f7f4[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Tue Apr 7 23:26:49 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Tue Apr 7 23:26:49 2026
+
+    I was about to break the streak
+
+[33mcommit b32669d6b24601d42c44f11690bcbf4c3156ba0e[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Thu Apr 2 22:26:29 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Thu Apr 2 22:26:29 2026
+
+    today couldent study still pushing at point
+
+[33mcommit 3afb1f3740413627f5ab2f653a34d1cb71d51758[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Wed Apr 1 18:36:09 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Wed Apr 1 18:36:09 2026
+
+    whole day did apti but understood nothing
+
+[33mcommit 35b93bfe353ae77cf8d8d9a9120c93033cea468c[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Tue Mar 31 17:42:09 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Tue Mar 31 17:42:09 2026
+
+    today we complaint about sylabus is slow to giri sir
+
+[33mcommit f935db1b97f0b61dff345e8c241303afb19c7d7b[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Tue Mar 31 17:41:11 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Tue Mar 31 17:41:11 2026
+
+    today solved this Leetcode2149 by myself no chatgpt
+
+[33mcommit 0fb04454154266648fa3c75d732c65022c05859e[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Mon Mar 30 22:00:36 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Mon Mar 30 22:00:36 2026
+
+    need to work on aptitude
+
+[33mcommit 9de3ae12fa6c5b4ed9e1335edaf449adf79a9662[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Sun Mar 29 20:05:54 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Sun Mar 29 20:05:54 2026
+
+    today was our l2 mock conducted by kiran giri sir
+
+[33mcommit aa329c5bca46de9061865a65d684cb3a4150192c[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Sat Mar 28 16:58:06 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Sat Mar 28 16:58:06 2026
+
+    studied for 8 hrs
+
+[33mcommit 286a84e1e409534a4d7db2ce8b1904e65202e96d[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Mar 27 20:05:13 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Mar 27 20:05:13 2026
+
+    now working on no chatgpt mission:
+
+[33mcommit 031d4d2ab95fea0356f38af3f7d5f5fe7aba8ea1[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Mar 27 19:02:47 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Mar 27 19:02:47 2026
+
+    revise some interview code
+
+[33mcommit 28dea44edbabe99e28b61793679e0e6970d99688[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Mar 27 15:30:36 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Mar 27 15:30:36 2026
+
+    implemented an application for abstract classes to calculate salary for PartTimeEmployee and FullTimeEmployee
+
+[33mcommit fe57236d9d6c182404b05bb5fd4bf6b545eca31b[m
+Author:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+AuthorDate: Fri Mar 27 15:30:26 2026
+Commit:     Pravin-Sonwane-2004 <pravinson222@gmail.com>
+CommitDate: Fri Mar 27 15:30:26 2026
+
+    implemented an application for abstract classes to calculate salary for PartTimeEmployee and FullTimeEmployee
+
+[33mcommit ada0fb0cd81c78850d0f36ba152316e718c69630[m
+Author:     pravin Sonwane <pravinson222@gmail.com>
+AuthorDate: Wed Mar 25 21:58:11 2026
+Commit:     GitHub <noreply@github.com>
+CommitDate: Wed Mar 25 21:58:11 2026
