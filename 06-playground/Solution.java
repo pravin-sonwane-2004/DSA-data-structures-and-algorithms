@@ -573,79 +573,244 @@ import java.util.Map;
 	// }
 // }
 	
-class LinkedList {
-    Node head; // Head of the list
+// class LinkedList {
+//     Node head; // Head of the list
 
-    class Node {
-        int data;
-        Node next;
+//     class Node {
+//         int data;
+//         Node next;
 
-        Node(int d) {
-            data = d;
-            next = null;
-        }
-    }
+//         Node(int d) {
+//             data = d;
+//             next = null;
+//         }
+//     }
 	
-	void insertAtBiginning(int val) {
-		Node node = new Node(val);
-		node.next= head;
-		head = node;
-	}
+// 	void insertAtBiginning(int val) {
+// 		Node node = new Node(val);
+// 		node.next= head;
+// 		head = node;
+// 	}
 	
-	void show() {
-		Node curr = head;
-		while(curr != null) {
-			IO.println(curr.data);
-			curr = curr.next; 
-		}
-	}
+// 	void show() {
+// 		Node curr = head;
+// 		while(curr != null) {
+// 			IO.println(curr.data);
+// 			curr = curr.next; 
+// 		}
+// 	}
 	
-	void reverse() {
-		Node curr = head;
-		Node prev = null;
-		while(curr != null) {
-			 Node next = curr.next;
-			 curr.next  = prev;
-			 prev = curr;
-			 curr = next;
-		}
-		head = prev;
-	}
+// 	void reverse() {
+// 		Node curr = head;
+// 		Node prev = null;
+// 		while(curr != null) {
+// 			 Node next = curr.next;
+// 			 curr.next  = prev;
+// 			 prev = curr;
+// 			 curr = next;
+// 		}
+// 		head = prev;
+// 	}
 	
-	LinkedList merge(LinkedList l1,LinkedList l2) {
-		LinkedList newL = new LinkedList();
+// 	LinkedList merge(LinkedList l1,LinkedList l2) {
+// 		LinkedList newL = new LinkedList();
 		
-		Node curr1 = l1.head;
-		Node curr2 = l2.head;
+// 		Node curr1 = l1.head;
+// 		Node curr2 = l2.head;
 		
-		while(curr1!= null && curr2!= null) {
-			Node pick;
-			 if(curr1.data <curr2.data) {
-				pick = curr1.data;  
-				curr1 = curr1.next;
-			 }
-			 else {
-				 pick = curr2.data;
-				 curr2 = curr2.next;
-			 }
-			 newL = pick;
-		}
+// 		while(curr1!= null && curr2!= null) {
+// 			Node pick;
+// 			 if(curr1.data <curr2.data) {
+// 				pick = curr1.data;  
+// 				curr1 = curr1.next;
+// 			 }
+// 			 else {
+// 				 pick = curr2.data;
+// 				 curr2 = curr2.next;
+// 			 }
+// 			 newL = pick;
+// 		}
+// 	}
+// }
+// class Solution {
+// 	void main() {
+// 		LinkedList ll = new LinkedList();
+// 		ll.insertAtBiginning(2);
+// 		ll.insertAtBiginning(3);
+// 		ll.insertAtBiginning(4);
+// 		ll.insertAtBiginning(5);
+		
+// 		LinkedList llM = new LinkedList();
+		
+// 		ll.insertAtBiginning(2);
+// 		ll.insertAtBiginning(3);
+// 		ll.insertAtBiginning(4);
+// 		ll.insertAtBiginning(5);
+			   
+// 	}
+// }
+
+
+
+
+// class Solution {
+    // public String longestPalindrome(String s) {
+        // int left = 0;
+        // String k ="";
+        // for(int i =0;i<s.length();i++) {
+            // while(!isPalindrome(s,left,i)) {
+                // left++;
+            // }
+            // k = s.substring(left,i);
+        // }
+        // return k;
+		// void main () {
+			// int freq [] = new int[26];
+			// String str = "pravin";
+			// for(int i=0;i<str.length();i++) {
+				// char c = str.charAt(i);
+				// freq[c-'a']++;
+			// }
+			// for(int i=0;i<26;i++) {
+				// IO.println(freq[i]);
+			// }
+		// }
+    // }
+
+    // private boolean isPalindrome(String s,int start,int end) {
+        // while(start<=end) {
+            // if(s.charAt(start)!= s.charAt(end)) return false;
+        // }
+        // return true;
+    // }
+		// void main() {
+				// String s = "babad";
+				// IO.println(longestPalindrome(s));
+		// }
+// }
+
+
+
+// class Solution {
+    // public int characterReplacement(String s, int k) {
+			// int freq [] = new int[26];
+			// int left = 0;
+			// int maxFreq = 0;
+			// int maxLength = 0;
+
+		  // for(int i=0;i<s.length();i++) {
+			  // char c = s.charAt(i);
+			  // freq[c-'A']++;
+			
+			// maxFreq = Math.max(maxFreq,freq[c-'A']) ;
+			
+			// int windowSize = i - left + 1;
+			
+			// if(windowSize - maxFreq > k) {
+				// char leftChar = s.charAt(left);
+                // freq[leftChar - 'A']--;
+                // left++;
+			// }
+			            // maxLength = Math.max(maxLength, i - left + 1);
+
+		  // }
+		  // return maxLength;
+	// }
+	// void main() {
+		// String s = "AABABBA"; 
+		// int k = 1;
+		 // IO.println(characterReplacement(s,k));
+	// }
+// }
+
+// Input: strs = ["eat","tea","tan","ate","nat","bat"]
+
+// Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+// import java.util.*;
+
+// class Solution {
+	// public List<List<String>> listAnagram(String [] str) {
+		// Map<String,List<String>> map = new HashMap<>();
+		
+		// for(String s : str){
+			// int freq [] = new int[26];
+			
+			// for(char c : s.toCharArray()) {
+				// freq[c-'a']++;
+			// }
+			// String key = Arrays.toString(freq);
+			// if(!map.containsKey(key)) {
+				// map.put(key,new ArrayList<>());
+			// }
+			// map.get(key).add(s);
+		// }
+        // return new ArrayList<>(map.values());
+	// }
+	// void main () {
+        // String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
+		// List<List<String>> list = listAnagram(strs);
+
+        // for (int i = 0; i < list.size(); i++) {
+            // System.out.println(list.get(i));
+        // }
+
+	// }
+// }
+
+// class LinkedList {
+	// Node head;
+
+	// class Node {
+		// int val;
+		// Node next;
+		// Node(int val) {
+			// this.val = val;
+			// this.next = null;
+		// }
+	// } 
+	// void insertAtBeginning(int data) {
+    // 1. Create the new node
+    // Node newNode = new Node(data);
+    // 2. Point new node to current head
+    // newNode.next = head;
+    // 3. Make the new node the head
+    // head = newNode;
+	// }
+
+	// void printList() {
+		// Node curr = head;
+		// while(curr != null) {
+			// IO.println(curr.val);
+			// curr = curr.next;
+		// }
+	// }
+// }
+
+// class Parrent {
+	// void show() {
+		// IO.println("Parrents show");
+	// }
+// }
+
+// class Child extends Parrent {
+	// void show() {
+		// IO.println("Child show");
+	// }
+// }
+
+class UserNotF extends RuntimeException {
+	public UserNotF(String message)  {
+		super(message);
 	}
 }
 class Solution {
-	void main() {
-		LinkedList ll = new LinkedList();
-		ll.insertAtBiginning(2);
-		ll.insertAtBiginning(3);
-		ll.insertAtBiginning(4);
-		ll.insertAtBiginning(5);
+	 void main() {
+		int a = 443;
+		int b = 23;
 		
-		LinkedList llM = new LinkedList();
-		
-		ll.insertAtBiginning(2);
-		ll.insertAtBiginning(3);
-		ll.insertAtBiginning(4);
-		ll.insertAtBiginning(5);
-			   
-	}
+		if(a>b) {
+			throw new UserNotF("this is now found");
+		}
+	 }
 }

@@ -1,23 +1,54 @@
 import java.util.Arrays;
 
-public class BB {
-    public static void selectionSort(int[] arr) {
-            for(int i = 0; i<arr.length;i++) {
-                int minindex = i;
-                for(int j = 0;j<arr.length;j++) {
-                    if(arr[j]<arr[minindex]) {
-                        minindex=j;
-                    }
-                    int temp = arr[minindex];
-                    arr[minindex] = arr[i];
-                    arr[i] = temp;
-                }
-            }
-        }
+public class Employee {
+    // Fields
+    private int id;
+    private int sal;
+    private String name;
 
-    static void main(String[] args) {
-        int[] arr = {5, 8, 7, 9, 6, 4, 3, 2, 1};
-            selectionSort(arr);
-            System.out.println(Arrays.toString(arr));
+    // Constructor
+    public Employee(int id, int sal, String name) {
+        this.id = id;
+        this.sal = sal;
+        this.name = name;
     }
+
+    // Getters and Setters
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getSal() {
+        return sal;
+    }
+
+    public void setSal(int sal) {
+        this.sal = sal;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+
+
+public class BB {
+     void main() {
+			Employee arr [] = new Employee[4];
+			
+			for(int i=0;i<arr.length;i++) {
+				arr[i] = new Employee(i+1,i+1000,i+"Pravin");
+			}
+			for(int i=0;i<arr.length;i++) {
+			IO.println(arr[i].getSal()+"  "+ arr[i].getId()+ "  " + arr[i].getName());
+			}
+	 }
 }
