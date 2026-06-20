@@ -2,3 +2,4 @@
 "2026-06-18 18:40:00" "docs: add initial project overview and setup instructions"
 "2026-06-19 14:20:00" "feat: implement user registration endpoint"
 "2026-06-20 09:30:00" "fix: validate email before saving user"
+"2026-06-20 13:10:00" "refactor: extract validation logic into service layer"
