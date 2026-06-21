@@ -5,3 +5,4 @@
 "2026-06-20 13:10:00" "refactor: extract validation logic into service layer"
 "2026-06-20 20:25:00" "test: add unit tests for registration service"
 "2026-06-21 11:00:00" "feat: implement login authentication flow"
+"2026-06-21 17:35:00" "security: hash passwords using BCrypt"
