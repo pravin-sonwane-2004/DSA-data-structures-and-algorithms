@@ -7,3 +7,4 @@
 "2026-06-21 11:00:00" "feat: implement login authentication flow"
 "2026-06-21 17:35:00" "security: hash passwords using BCrypt"
 "2026-06-22 15:45:00" "docs: document authentication API endpoints"
+"2026-06-23 09:50:00" "feat: add JWT token generation"
