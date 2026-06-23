@@ -8,3 +8,4 @@
 "2026-06-21 17:35:00" "security: hash passwords using BCrypt"
 "2026-06-22 15:45:00" "docs: document authentication API endpoints"
 "2026-06-23 09:50:00" "feat: add JWT token generation"
+"2026-06-23 14:15:00" "fix: resolve token expiration handling"
