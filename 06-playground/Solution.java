@@ -799,18 +799,161 @@ import java.util.Map;
 	// }
 // }
 
-class UserNotF extends RuntimeException {
-	public UserNotF(String message)  {
-		super(message);
-	}
-}
-class Solution {
-	 void main() {
-		int a = 443;
-		int b = 23;
+// class UserNotF extends RuntimeException {
+	// public UserNotF(String message)  {
+		// super(message);
+	// }
+// }
+// class Solution {
+	 // void main() {
+		// int a = 443;
+		// int b = 23;
 		
-		if(a>b) {
-			throw new UserNotF("this is now found");
-		}
-	 }
-}
+		// if(a>b) {
+			// throw new UserNotF("this is now found");
+		// }
+	 // }
+// }
+			 // class A {
+    // static void display() {
+        // System.out.println("A");
+    // }
+// }
+// class B extends A {
+    // static void display() {
+        // System.out.println("B");
+    // }
+// }
+
+// class Solution {
+    // public static void main(String[] args) {
+               // A obj = new B();
+        // obj.display();
+
+    // }
+// }
+
+
+// abstract class Shape {
+    // Shape() {
+        // System.out.println("Shape");
+    // }
+// }
+
+// public class Solution {
+    // public static void main(String[] args) {
+        // Shape s = new Shape();
+    // }
+// }
+
+
+// class Solution {
+    // static int count = 0;
+
+    // Solution() {
+        // count++;
+    // }
+
+    // public static void main(String[] args) {
+        // new Solution();
+        // new Solution();
+        // System.out.println(count);
+    // }
+// }
+
+
+// class A {
+    // final void show() {
+        // System.out.println("A");
+    // }
+// }
+
+// class B extends A {
+    // void show() {
+        // System.out.println("B");
+    // }
+// }
+
+// class Demo {
+    // int x = 5;
+
+    // Demo() {
+        // this(10);
+        // System.out.println(x);
+    // }
+
+    // Demo(int x) {
+        // this.x = x;
+    // }
+
+    // public static void main(String[] args) {
+        // new Demo();
+    // }
+// }
+
+
+
+// class Parent {
+    // Parent() {
+        // System.out.println("Parent");
+    // }
+// }
+
+// class Child extends Parent {
+    // Child() {
+        // System.out.println("Child");
+    // }
+// }
+
+// public class Test {
+    // public static void main(String[] args) {
+        // new Child();
+    // }
+// }
+
+// class Solution {
+    // static int x = 10;
+
+    // static {
+        // x = 20;
+    // }
+
+    // public static void main(String[] args) {
+        // System.out.println(x);
+    // }
+// }
+
+// abstract class Animal {
+    // abstract void sound();
+// }
+
+// class Dog extends Animal {
+// }
+
+// public class Test {
+    // public static void main(String[] args) {
+        // Dog d = new Dog();
+    // }
+// }
+
+// class A {
+    // void show() {
+        // System.out.println("A");
+    // }
+// }
+
+// class B extends A {
+    // void show() {
+        // System.out.println("B");
+    // }
+// }
+
+// public class Test {
+    // public static void main(String[] args) {
+        // A obj = new B();
+        // obj.show();
+    // }
+// }
+
+
+
