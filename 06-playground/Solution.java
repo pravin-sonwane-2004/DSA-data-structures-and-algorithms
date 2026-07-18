@@ -1146,16 +1146,40 @@ import java.util.Map;
 // sql=1
 
 
-class Solution{
-	void main() {
-		String str = "java spring java sql spring java";
-		Map<String,Integer>map = new HashMap<>();
-		String sk [] = str.split(" ");
-		for(String c : sk) {
-			map.put(c,map.getOrDefault(c,0)+1);
-		}
-		for(Map.Entry<String,Integer> e : map.entrySet()) {
-			IO.println(e);
+// class Solution{
+	// void main() {
+		// String str = "java spring java sql spring java";
+		// Map<String,Integer>map = new HashMap<>();
+		// String sk [] = str.split(" ");
+		// for(String c : sk) {
+			// map.put(c,map.getOrDefault(c,0)+1);
+		// }
+		// for(Map.Entry<String,Integer> e : map.entrySet()) {
+			// IO.println(e);
+		// }
+	// }
+// }
+
+// class Solution {
+	// void main() {
+		// String [] wordDict = new String[]{"leet","code"};
+		// String s = "leetcode";
+        // String line = "";
+        // for(String str : wordDict) {
+            // line = line.concat(str);
+            // if(s.equals(str)){
+                // IO.println("true");
+            // }
+        // }
+		// IO.println("false");
+    // }
+// }
+
+	class Solution {
+		void main() {
+			int i =10;
+			 Integer n = i;
+			 IO.println();
+			 IO.println("dsf");
 		}
 	}
-}

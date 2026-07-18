@@ -1,22 +1,47 @@
-package Practice;
+// class Student implements Cloneable {
+    // String name;
 
-public class Employee {
+    // Student(Student s2) {
+        // this.name = s2.name;
+    // }
+
+    // Student(String name) {
+        // this.name = name;
+    // }
+// }
+import java.io.*;
+
+class IMClass implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
     String name;
-    int id;
+    transient String pass;
 
-    String getName() {
+    IMClass(String name, String pass) {
+        this.name = name;
+        this.pass = pass;
+    }
+
+    public String getName() {
         return name;
     }
+}
 
-    void setName(String name) {
-        this.name = name;
-    }
+public class Employee {
 
-    int getId() {
-        return id;
-    }
+    public static void main(String[] args) throws Exception {
 
-    void setId(int i) {
-        id = i;
+        ObjectOutputStream os =
+                new ObjectOutputStream(
+                        new FileOutputStream("Pravin.txt"));
+
+        IMClass obj = new IMClass("Pravin", "12345");
+
+        os.writeObject(obj);
+
+        os.close();
+
+        System.out.println("Object Written Successfully");
     }
 }
